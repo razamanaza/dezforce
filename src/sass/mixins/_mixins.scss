@@ -2,14 +2,6 @@
   transition: 0.2s ease-in;
 }
 
-@mixin flexbox {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 @mixin clearfix() {
   &:before,
   &:after {
