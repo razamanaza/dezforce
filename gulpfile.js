@@ -74,6 +74,7 @@ gulp.task('clean', function() {
 
 gulp.task('watch', ['js', 'browser-sync', 'css-libs'], () => {
 	gulp.watch('node_modules/font-awesome/fonts/*', ['fonts']);
+	gulp.watch('src/js/common.js', ['js']);
 	gulp.watch('src/sass/**/*.scss', ['sass']);
 	gulp.watch('src/*.html', browsersync.reload)
 });
