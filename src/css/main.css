@@ -50,11 +50,11 @@
   transition: 0.2s ease-in; }
 
 ::-moz-selection {
-  background-color: orange;
+  background-color: #EDCB71;
   color: #fff; }
 
 ::selection {
-  background-color: orange;
+  background-color: #EDCB71;
   color: #fff; }
 
 html, body {

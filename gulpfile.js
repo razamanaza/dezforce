@@ -34,6 +34,7 @@ gulp.task('css-libs', ['sass'], function() {
 	return gulp.src([
 		'node_modules/normalize.css/normalize.css',
 		'node_modules/font-awesome/css/font-awesome.min.css',
+		'node_modules/jquery.mmenu/dist/jquery.mmenu.all.css',
 	])
 	.pipe(concat('libs.min.css'))
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
@@ -49,6 +50,7 @@ gulp.task('fonts', () => {
 gulp.task('js', () => {
 	return gulp.src([
 		'node_modules/jquery/dist/jquery.min.js',
+		'node_modules/jquery.mmenu/dist/jquery.mmenu.all.js',
 		'src/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
