@@ -1,5 +1,5 @@
 @import "mixins/font-face";
 
-@include font-face("Roboto", "../fonts/RobotoRegular/RobotoRegular");
-@include font-face("Roboto", "../fonts/RobotoBold/RobotoBold", bold);
 @include font-face("Oswald", "../fonts/OswaldRegular/Oswald-Regular");
+@include font-face("OpenSans", "../fonts/OpenSansRegular/OpenSans-Regular");
+@include font-face("OpenSans", "../fonts/OpenSansBold/OpenSans-Bold", bold);

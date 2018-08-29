@@ -1,23 +1,23 @@
 @font-face {
-  font-family: "Roboto";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/RobotoBold/RobotoBold.eot");
-  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
-
-@font-face {
   font-family: "Oswald";
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/OswaldRegular/Oswald-Regular.eot");
   src: url("../fonts/OswaldRegular/Oswald-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OswaldRegular/Oswald-Regular.woff") format("woff"), url("../fonts/OswaldRegular/Oswald-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSansRegular/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSansRegular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSans-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/OpenSansBold/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSansBold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBold/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSansBold/OpenSans-Bold.ttf") format("truetype"); }
 
 ::-webkit-input-placeholder {
   color: #ccc;
@@ -65,13 +65,14 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.65;
-  font-family: "Roboto", sans-serif;
+  font-family: "OpenSans", sans-serif;
   overflow-x: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
   font-weight: normal;
-  line-height: 1.3; }
+  line-height: 1.4;
+  text-transform: uppercase; }
 
 input, textarea {
   border: 1px solid #ccc;
