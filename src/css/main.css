@@ -125,22 +125,26 @@ a {
 .mm-panels a:after, .mm-panels .mm-listitem:after {
   border: none; }
 
-.main-header-top a {
-  line-height: 95px;
-  float: right;
-  padding: 0;
-  margin-left: 20px; }
+.main-header a {
+  color: #fff; }
 
-.main-header-top .main-header-hamburger {
-  margin-top: 5px; }
-
-.main-header-top .main-header-phone i {
-  margin-right: 10px;
-  font-size: 35px;
-  color: #dca71c; }
-
-.main-header-top .main-header-phone {
-  font-size: 30px; }
+.main-header .top-nav {
+  background-color: rgba(0, 0, 0, 0.8); }
+  .main-header .top-nav .main-header-hamburger, .main-header .top-nav .main-header-phone {
+    line-height: 95px;
+    float: right;
+    padding: 0;
+    margin-left: 20px; }
+  .main-header .top-nav .main-header-hamburger {
+    margin-top: 5px; }
+  .main-header .top-nav .main-header-phone i {
+    margin-right: 10px;
+    font-size: 32px;
+    color: #dca71c; }
+  .main-header .top-nav .main-header-phone {
+    font-size: 30px; }
+  .main-header .top-nav .hamburger-inner, .main-header .top-nav .hamburger-inner:after, .main-header .top-nav .hamburger-inner:before {
+    background-color: #fff; }
 
 #reviews {
   margin-top: 900px; }

@@ -31,6 +31,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "hamburgers": "^0.9.3",
-    "imagemin-pngquant": "^5.1.0"
+    "imagemin-pngquant": "^5.1.0",
+    "jquery-sticky": "^1.0.4"
   }
 }

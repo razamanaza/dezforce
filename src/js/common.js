@@ -22,4 +22,6 @@ $(document).ready(function() {
     $('.hamburger').removeClass('is-active');
   });
 
+  //sticky menu
+  $(".top-nav").sticky({topSpacing:0});
 });

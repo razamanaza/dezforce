@@ -95,24 +95,32 @@ a {
 		border: none;
 	}
 }
-
-.main-header-top {
+.main-header {
 	a {
-		line-height: 95px;
-		float: right;
-		padding: 0;
-		margin-left: 20px;
+		color: #fff;
 	}
-	.main-header-hamburger {
-		margin-top: 5px;
-	}
-	.main-header-phone i {
-		margin-right: 10px;
-		font-size: 35px;
-		color: darken( $accent, 20% );
-	}
-	.main-header-phone {
-		font-size: 30px;
+	.top-nav {
+		background-color: rgba(0, 0, 0, 0.8);
+		.main-header-hamburger, .main-header-phone {
+			line-height: 95px;
+			float: right;
+			padding: 0;
+			margin-left: 20px;
+		}
+		.main-header-hamburger {
+			margin-top: 5px;
+		}
+		.main-header-phone i {
+			margin-right: 10px;
+			font-size: 32px;
+			color: darken( $accent, 20% );
+		}
+		.main-header-phone {
+			font-size: 30px;
+		}
+		.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+			background-color: #fff;
+		}
 	}
 }
 

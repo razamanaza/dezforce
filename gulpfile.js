@@ -53,6 +53,7 @@ gulp.task('js', () => {
 		'node_modules/jquery/dist/jquery.min.js',
 		'node_modules/jquery.mmenu/dist/jquery.mmenu.all.js',
 		'node_modules/jquery.mmenu/dist/addons/pagescroll/jquery.mmenu.pagescroll.js',
+		'node_modules/jquery-sticky/jquery.sticky.js',
 		'src/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
