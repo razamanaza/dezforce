@@ -125,7 +125,7 @@ a {
 .mm-panels a:after, .mm-panels .mm-listitem:after {
   border: none; }
 
-.main-header-top > a {
+.main-header-top a {
   line-height: 95px;
   float: right;
   padding: 0;
@@ -137,7 +137,7 @@ a {
 .main-header-top .main-header-phone i {
   margin-right: 10px;
   font-size: 35px;
-  color: #EDCB71; }
+  color: #dca71c; }
 
 .main-header-top .main-header-phone {
   font-size: 30px; }

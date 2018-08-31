@@ -97,7 +97,7 @@ a {
 }
 
 .main-header-top {
-	>a {
+	a {
 		line-height: 95px;
 		float: right;
 		padding: 0;
@@ -109,7 +109,7 @@ a {
 	.main-header-phone i {
 		margin-right: 10px;
 		font-size: 35px;
-		color: $accent;
+		color: darken( $accent, 20% );
 	}
 	.main-header-phone {
 		font-size: 30px;
