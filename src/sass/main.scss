@@ -81,6 +81,14 @@ a {
 .text-center {
 	text-align: center;
 }
+
+.mm-wrapper_opening .mm-menu_position-right.mm-menu_opened~.mm-slideout {
+	-webkit-transform: translate(-340px,0);
+	-ms-transform: translate(-340px,0);
+	transform: translate(-340px,0);
+	-webkit-transform: translate3d(-340px,0,0);
+	transform: translate3d(-340px,0,0);
+}
 	
 // block specific
 .mm-menu {
@@ -96,13 +104,31 @@ a {
 	}
 }
 .main-header {
+	color: #fff;
+	background-attachment: fixed;
+	background-image: url("../img/header-bg.jpg");
+	background-repeat: none;
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.6);
 	a {
 		color: #fff;
 	}
-	.top-nav {
+	.is-sticky .top-nav {
 		background-color: rgba(0, 0, 0, 0.8);
+	}
+	.main-header-wrapper {
+		background-color: rgba(0, 0, 0, 0.6);
+		border-bottom: 1px solid;
+	}
+	.top-nav {
+		.header-logo {
+			img {
+				margin-top: 7px;
+			}
+		}
 		.main-header-hamburger, .main-header-phone {
-			line-height: 95px;
+			line-height: 75px;
 			float: right;
 			padding: 0;
 			margin-left: 20px;
@@ -113,13 +139,34 @@ a {
 		.main-header-phone i {
 			margin-right: 10px;
 			font-size: 32px;
-			color: darken( $accent, 20% );
+			color: $maincolor;
 		}
 		.main-header-phone {
 			font-size: 30px;
 		}
 		.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
 			background-color: #fff;
+		}
+	}
+	.main-header-promo {
+		margin-top: 60px;
+		margin-bottom: 60px;
+		font-size: 24px;
+		ul {
+			padding-left: 30px;
+		}
+		li:before {
+			content: '\f105';
+			font-family: FontAwesome;
+			color: $maincolor;
+			font-weight: bold;
+			position: absolute;
+			left: -30px;
+		}
+		li {
+			list-style: none;
+			margin-bottom: 15px;
+			position: relative;
 		}
 	}
 }
@@ -129,13 +176,7 @@ a {
 }
 
 @media (min-width: 550px) {
-	.mm-wrapper_opening .mm-menu_position-right.mm-menu_opened~.mm-slideout {
-			-webkit-transform: translate(-340px,0);
-			-ms-transform: translate(-340px,0);
-			transform: translate(-340px,0);
-			-webkit-transform: translate3d(-340px,0,0);
-			transform: translate3d(-340px,0,0);
-	}
+
 }
 
 @import "media"; // Always at the end

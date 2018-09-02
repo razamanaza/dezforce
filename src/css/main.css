@@ -19,6 +19,13 @@
   src: url("../fonts/OpenSansBold/OpenSans-Bold.eot");
   src: url("../fonts/OpenSansBold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBold/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSansBold/OpenSans-Bold.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"); }
+
 ::-webkit-input-placeholder {
   color: #ccc;
   -webkit-transition: 0.2s ease-in;
@@ -115,6 +122,13 @@ a {
 .text-center {
   text-align: center; }
 
+.mm-wrapper_opening .mm-menu_position-right.mm-menu_opened ~ .mm-slideout {
+  -webkit-transform: translate(-340px, 0);
+  -ms-transform: translate(-340px, 0);
+  transform: translate(-340px, 0);
+  -webkit-transform: translate3d(-340px, 0, 0);
+  transform: translate3d(-340px, 0, 0); }
+
 .mm-menu {
   max-width: 340px; }
 
@@ -125,13 +139,26 @@ a {
 .mm-panels a:after, .mm-panels .mm-listitem:after {
   border: none; }
 
-.main-header a {
-  color: #fff; }
-
-.main-header .top-nav {
-  background-color: rgba(0, 0, 0, 0.8); }
+.main-header {
+  color: #fff;
+  background-attachment: fixed;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: none;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6); }
+  .main-header a {
+    color: #fff; }
+  .main-header .is-sticky .top-nav {
+    background-color: rgba(0, 0, 0, 0.8); }
+  .main-header .main-header-wrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid; }
+  .main-header .top-nav .header-logo img {
+    margin-top: 7px; }
   .main-header .top-nav .main-header-hamburger, .main-header .top-nav .main-header-phone {
-    line-height: 95px;
+    line-height: 75px;
     float: right;
     padding: 0;
     margin-left: 20px; }
@@ -145,17 +172,26 @@ a {
     font-size: 30px; }
   .main-header .top-nav .hamburger-inner, .main-header .top-nav .hamburger-inner:after, .main-header .top-nav .hamburger-inner:before {
     background-color: #fff; }
+  .main-header .main-header-promo {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 24px; }
+    .main-header .main-header-promo ul {
+      padding-left: 30px; }
+    .main-header .main-header-promo li:before {
+      content: '\f105';
+      font-family: FontAwesome;
+      color: #dca71c;
+      font-weight: bold;
+      position: absolute;
+      left: -30px; }
+    .main-header .main-header-promo li {
+      list-style: none;
+      margin-bottom: 15px;
+      position: relative; }
 
 #reviews {
   margin-top: 900px; }
-
-@media (min-width: 550px) {
-  .mm-wrapper_opening .mm-menu_position-right.mm-menu_opened ~ .mm-slideout {
-    -webkit-transform: translate(-340px, 0);
-    -ms-transform: translate(-340px, 0);
-    transform: translate(-340px, 0);
-    -webkit-transform: translate3d(-340px, 0, 0);
-    transform: translate3d(-340px, 0, 0); } }
 
 /*!
  * Bootstrap Grid v4.1.3 (https://getbootstrap.com/)

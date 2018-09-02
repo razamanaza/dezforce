@@ -23,5 +23,5 @@ $(document).ready(function() {
   });
 
   //sticky menu
-  $(".top-nav").sticky({topSpacing:0});
+  $(".top-nav").sticky({topSpacing:0, zIndex: 100});
 });
