@@ -76,7 +76,7 @@ a {
 	
 .btn {
   position: relative;
-  display: block;
+  display: inline-block;
   padding: 20px;
   overflow: hidden;
   border-width: 0;
@@ -84,7 +84,7 @@ a {
   border-radius: 2px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
  	background-color: $maincolor;
-  color: #fff;
+  color: $text-inverse;
 	transition: background-color .3s;
 	cursor: pointer;
 	
@@ -144,7 +144,7 @@ section {
 // block specific
 .mm-panels {
 	.mm-navbar .mm-navbar__title {
-		color: #ffffff;
+		color: $text-inverse;
 		text-transform: uppercase;
 	}
 	a:after, .mm-listitem:after {
@@ -152,7 +152,7 @@ section {
 	}
 }
 .main-header {
-	color: #fff;
+	color: $text-inverse;
 	background-attachment: fixed;
 	background-image: url("../img/header-bg.jpg");
 	background-repeat: none;
@@ -160,7 +160,7 @@ section {
 	background-position: center;
 	background-color: rgba(0, 0, 0, 0.6);
 	a {
-		color: #fff;
+		color: $text-inverse;
 	}
 	.is-sticky .top-nav {
 		background-color: rgba(0, 0, 0, 0.8);
@@ -282,6 +282,7 @@ section {
 	background-repeat: none;
 	background-size: cover;
 	background-position: center;
+	color: $text-inverse;
 	li:before {
 		content: '\f14a';
 		font-family: FontAwesome;
@@ -298,6 +299,20 @@ section {
 	}
 	.method-wrapper {
 		background-color: rgba(0, 0, 0, 0.6);
+		border-bottom: 1px solid rgba(255, 255, 255, 0);
+		border-top: 1px solid rgba(255, 255, 255, 0);
+	}
+	.container {
+		margin-top: 60px;
+		margin-bottom: 60px;
+		text-align: center;
+		ul {
+			text-align: left;
+		}
+	}
+	.btn {
+		text-transform: uppercase;
+		margin-top: 30px;
 	}
 }
 
