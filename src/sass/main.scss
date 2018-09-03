@@ -134,8 +134,10 @@ a {
 section {
 	margin-top: 50px;
 	margin-bottom: 50px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
 	h2, h3, h4, h5, h6 {
 		text-align: center;
+		margin-bottom: 40px;
 	}
 }
 	
@@ -262,22 +264,41 @@ section {
 		}
 	}
 	.around-a-clock::after {
-		background: url("../img/circular-clock.png");
+		background-image: url("../img/circular-clock.png");
 		background-size: cover;
 	}
 	.professionally:after {
-		background: url("../img/thumbs-up.png");
+		background-image: url("../img/thumbs-up.png");
 		background-size: cover;
 	}
 	.reliably::after {
-		background: url("../img/shield.png");
+		background-image: url("../img/shield.png");
 		background-size: cover;
 	}
 }
 
-#reviews {
-	margin-top: 900px;
+.method {
+	background-image: url("../img/method-bg.jpg");
+	background-repeat: none;
+	background-size: cover;
+	background-position: center;
+	li:before {
+		content: '\f14a';
+		font-family: FontAwesome;
+		color: $maincolor;
+		font-weight: bold;
+		position: absolute;
+		left: -30px;
+		font-size: 20px;
+	}
+	li {
+		list-style: none;
+		margin-bottom: 15px;
+		position: relative;
+	}
+	.method-wrapper {
+		background-color: rgba(0, 0, 0, 0.6);
+	}
 }
-
 
 @import "media"; // Always at the end
