@@ -1,5 +1,7 @@
 @import "vars";
 @import "fonts";
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
+@import "../../node_modules/bootstrap/scss/utilities/_display";
 
 ::placeholder {
 	color: #ccc;
@@ -52,7 +54,8 @@ h1, h2, h3, h4, h5, h6 {
 
 input, textarea {
 	border: 1px solid #ccc;
-	padding: 10px;
+	padding: 15px;
+	border-radius: 5px;
 	@include transition-animation;
 		outline: none;
 		&:focus:required:invalid {
@@ -71,6 +74,52 @@ a {
 	}
 }
 	
+.btn {
+  position: relative;
+  display: block;
+  padding: 20px;
+  overflow: hidden;
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+ 	background-color: $maincolor;
+  color: #fff;
+	transition: background-color .3s;
+	cursor: pointer;
+	
+	&:hover, &:focus {
+		background-color: darken($maincolor, 10%);
+	}
+	&:before {
+		content: "";
+  	position: absolute;
+		top: 50%;
+		left: 50%;		
+		display: block;
+		width: 0;
+		padding-top: 0;			
+		border-radius: 100%;		
+		background-color: rgba(236, 240, 241, .3);		
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	&::active:before {
+		width: 120%;
+		padding-top: 120%;		
+		transition: width .2s ease-out, padding-top .2s ease-out;
+	}
+	> * {
+		position: relative;
+	}
+	span {
+		display: block;
+  	padding: 12px 24px;
+	}
+}
 
 .img-responsive {
 	display: block;
@@ -82,18 +131,8 @@ a {
 	text-align: center;
 }
 
-.mm-wrapper_opening .mm-menu_position-right.mm-menu_opened~.mm-slideout {
-	-webkit-transform: translate(-340px,0);
-	-ms-transform: translate(-340px,0);
-	transform: translate(-340px,0);
-	-webkit-transform: translate3d(-340px,0,0);
-	transform: translate3d(-340px,0,0);
-}
 	
 // block specific
-.mm-menu {
-	max-width: 340px; 
-}
 .mm-panels {
 	.mm-navbar .mm-navbar__title {
 		color: #ffffff;
@@ -142,7 +181,7 @@ a {
 			color: $maincolor;
 		}
 		.main-header-phone {
-			font-size: 30px;
+			font-size: 24px;
 		}
 		.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
 			background-color: #fff;
@@ -152,6 +191,9 @@ a {
 		margin-top: 60px;
 		margin-bottom: 60px;
 		font-size: 24px;
+		h2 {
+			margin-top: 0;
+		}
 		ul {
 			padding-left: 30px;
 		}
@@ -168,6 +210,30 @@ a {
 			margin-bottom: 15px;
 			position: relative;
 		}
+		form {
+			background-color: #fff;
+			border-radius: 5px;
+			color: $text-color;
+			padding: 30px;
+			text-align: center;
+			input {
+				width: 100%;
+				margin-bottom: 20px;
+				text-transform: uppercase;
+				font-size: 16px;
+			}
+			p {
+				font-size: 15px;
+   	 		margin-bottom: 30px;
+			}
+			.form-header {
+				font-weight: bold;
+				text-align: center;
+				font-size: 34px;
+				line-height: 1.1;
+				margin-top: 0;
+			}
+		}
 	}
 }
 
@@ -175,8 +241,5 @@ a {
 	margin-top: 900px;
 }
 
-@media (min-width: 550px) {
-
-}
 
 @import "media"; // Always at the end

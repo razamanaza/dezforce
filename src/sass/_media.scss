@@ -20,7 +20,21 @@
 
 //Small: ≥576px
 @include media-breakpoint-down(sm) {
-
+  
+  .main-header {
+    .main-header-promo {
+      font-size: 18px;
+      h2 {
+        font-size: 24px;
+      }
+    }
+    .top-nav {
+      .main-header-phone {
+        font-size: 20px;
+        float: left;
+      }
+    }
+  }
 }
 
 //Extra small: >0
@@ -42,7 +56,16 @@
 
 //Medium: ≤768px
 @include media-breakpoint-up(md) {
-
+  .mm-wrapper_opening .mm-menu_position-right.mm-menu_opened~.mm-slideout {
+    -webkit-transform: translate(-340px,0);
+    -ms-transform: translate(-340px,0);
+    transform: translate(-340px,0);
+    -webkit-transform: translate3d(-340px,0,0);
+    transform: translate3d(-340px,0,0);
+  }
+  .mm-menu {
+    max-width: 340px; 
+  }
 }
 
 //Large: ≤992px
