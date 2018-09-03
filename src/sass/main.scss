@@ -248,6 +248,31 @@ section {
 	p {
 		text-align: center;
 	}
+	.reasons-header {
+		font-weight: bold;
+		font-size: 22px;
+		&::after {
+			content: "";
+			display: block;
+			width: 180px;
+			height: 180px;
+			background-repeat: none;
+			background-position: center;
+			margin: 20px auto;
+		}
+	}
+	.around-a-clock::after {
+		background: url("../img/circular-clock.png");
+		background-size: cover;
+	}
+	.professionally:after {
+		background: url("../img/thumbs-up.png");
+		background-size: cover;
+	}
+	.reliably::after {
+		background: url("../img/shield.png");
+		background-size: cover;
+	}
 }
 
 #reviews {

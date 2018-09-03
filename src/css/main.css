@@ -422,6 +422,33 @@ section {
 .reasons p {
   text-align: center; }
 
+.reasons .reasons-header {
+  font-weight: bold;
+  font-size: 22px; }
+  .reasons .reasons-header::after {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 180px;
+    background-repeat: none;
+    background-position: center;
+    margin: 20px auto; }
+
+.reasons .around-a-clock::after {
+  background: url("../img/circular-clock.png");
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.reasons .professionally:after {
+  background: url("../img/thumbs-up.png");
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.reasons .reliably::after {
+  background: url("../img/shield.png");
+  -webkit-background-size: cover;
+          background-size: cover; }
+
 #reviews {
   margin-top: 900px; }
 
