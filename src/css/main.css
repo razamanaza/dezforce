@@ -332,6 +332,12 @@ a {
 .text-center {
   text-align: center; }
 
+section {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  section h2, section h3, section h4, section h5, section h6 {
+    text-align: center; }
+
 .mm-panels .mm-navbar .mm-navbar__title {
   color: #ffffff;
   text-transform: uppercase; }
@@ -412,6 +418,9 @@ a {
         font-size: 34px;
         line-height: 1.1;
         margin-top: 0; }
+
+.reasons p {
+  text-align: center; }
 
 #reviews {
   margin-top: 900px; }

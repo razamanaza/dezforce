@@ -131,6 +131,13 @@ a {
 	text-align: center;
 }
 
+section {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	h2, h3, h4, h5, h6 {
+		text-align: center;
+	}
+}
 	
 // block specific
 .mm-panels {
@@ -234,6 +241,12 @@ a {
 				margin-top: 0;
 			}
 		}
+	}
+}
+
+.reasons {
+	p {
+		text-align: center;
 	}
 }
 
