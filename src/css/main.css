@@ -340,6 +340,28 @@ section {
     text-align: center;
     margin-bottom: 40px; }
 
+form {
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  color: #222;
+  padding: 30px;
+  text-align: center; }
+  form input {
+    width: 100%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 16px; }
+  form p {
+    font-size: 15px;
+    margin-bottom: 30px; }
+  form .form-header {
+    font-weight: bold;
+    text-align: center;
+    font-size: 34px;
+    line-height: 1.1;
+    margin-top: 0; }
+
 .mm-panels .mm-navbar .mm-navbar__title {
   color: #eee;
   text-transform: uppercase; }
@@ -361,7 +383,7 @@ section {
   .main-header .is-sticky .top-nav {
     background-color: rgba(0, 0, 0, 0.8); }
   .main-header .main-header-wrapper {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     border-bottom: 1px solid; }
   .main-header .top-nav .header-logo img {
     margin-top: 7px; }
@@ -399,27 +421,6 @@ section {
       list-style: none;
       margin-bottom: 15px;
       position: relative; }
-    .main-header .main-header-promo form {
-      background-color: #fff;
-      -webkit-border-radius: 5px;
-              border-radius: 5px;
-      color: #222;
-      padding: 30px;
-      text-align: center; }
-      .main-header .main-header-promo form input {
-        width: 100%;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-        font-size: 16px; }
-      .main-header .main-header-promo form p {
-        font-size: 15px;
-        margin-bottom: 30px; }
-      .main-header .main-header-promo form .form-header {
-        font-weight: bold;
-        text-align: center;
-        font-size: 34px;
-        line-height: 1.1;
-        margin-top: 0; }
 
 .reasons p {
   text-align: center; }
@@ -471,7 +472,7 @@ section {
     margin-bottom: 15px;
     position: relative; }
   .method .method-wrapper {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     border-bottom: 1px solid rgba(255, 255, 255, 0);
     border-top: 1px solid rgba(255, 255, 255, 0); }
   .method .container {
@@ -483,6 +484,72 @@ section {
   .method .btn {
     text-transform: uppercase;
     margin-top: 30px; }
+
+.problems {
+  text-align: center; }
+  .problems .problems-header {
+    font-weight: bold;
+    font-size: 22px; }
+    .problems .problems-header::before {
+      content: "";
+      display: block;
+      width: 140px;
+      height: 140px;
+      background-repeat: none;
+      background-position: center;
+      margin: 20px auto; }
+  .problems .problems-icon {
+    position: relative; }
+    .problems .problems-icon::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      width: 300px;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      background-image: url("../img/danger.png");
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-repeat: none;
+      background-position: center; }
+  .problems .health-danger .problems-header::before {
+    background-image: url("../img/transfusion.png");
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .problems .property-danger .problems-header::before {
+    background-image: url("../img/couch.png");
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .problems .inefficiency-danger .problems-header::before {
+    background-image: url("../img/business-down-bars-graphic.png");
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .problems .low-qualification-danger .problems-header::before {
+    background-image: url("../img/accident.png");
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .problems .contract-absence-danger .problems-header::before {
+    background-image: url("../img/bad-grades.png");
+    -webkit-background-size: cover;
+            background-size: cover; }
+
+.advantages {
+  color: #eee;
+  background-image: url("../img/advantages-bg.jpg");
+  background-position: center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .advantages .advantages-wrapper {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    border-top: 1px solid rgba(255, 255, 255, 0); }
+    .advantages .advantages-wrapper .container {
+      margin-top: 60px;
+      margin-bottom: 60px; }
 
 /*!
  * Bootstrap Grid v4.1.3 (https://getbootstrap.com/)
