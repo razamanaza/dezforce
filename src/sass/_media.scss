@@ -15,7 +15,12 @@
 
 //Medium: ≥768px
 @include media-breakpoint-down(md) {
-
+  .problems {
+    .problems-icon::after {
+      width: 200px;
+			height: 200px;
+    }
+  }
 }
 
 //Small: ≥576px
@@ -33,6 +38,11 @@
         font-size: 20px;
         float: left;
       }
+    }
+  }
+  .problems {
+    .problems-icon::after {
+      display: none;
     }
   }
 }

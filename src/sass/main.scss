@@ -140,7 +140,13 @@ section {
 		margin-bottom: 40px;
 	}
 }
-	
+
+.section-content-header {
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+}
+
 form {
 	background-color: #fff;
 	border-radius: 5px;
@@ -251,9 +257,7 @@ form {
 	p {
 		text-align: center;
 	}
-	.reasons-header {
-		font-weight: bold;
-		font-size: 22px;
+	.section-content-header {
 		&::after {
 			content: "";
 			display: block;
@@ -319,9 +323,7 @@ form {
 
 .problems {
 	text-align: center;
-	.problems-header {
-		font-weight: bold;
-		font-size: 22px;
+	.section-content-header {
 		&::before {
 			content: "";
 			display: block;
@@ -351,44 +353,44 @@ form {
 		}
 	}
 	.health-danger {
-		.problems-header::before {
+		.section-content-header::before {
 			background-image: url('../img/transfusion.png');
 			background-size: cover;
 		}
 	}
 	.property-danger {
-		.problems-header::before {
+		.section-content-header::before {
 			background-image: url('../img/couch.png');
 			background-size: cover;
 		}
 	}
 	.inefficiency-danger {
-		.problems-header::before {
+		.section-content-header::before {
 			background-image: url('../img/business-down-bars-graphic.png');
 			background-size: cover;
 		}
 	}
 	.low-qualification-danger {
-		.problems-header::before {
+		.section-content-header::before {
 			background-image: url('../img/accident.png');
 			background-size: cover;
 		}
 	}
 	.contract-absence-danger {
-		.problems-header::before {
+		.section-content-header::before {
 			background-image: url('../img/bad-grades.png');
 			background-size: cover;
 		}
 	}
 }
 
-.advantages {
+.solutions {
 	color: $text-inverse;
 	background-image: url('../img/advantages-bg.jpg');
 	background-position: center;
 	background-repeat: none;
 	background-size: cover;
-	.advantages-wrapper {
+	.solutions-wrapper {
 		background-color: $wrapper-bg-bolor;
 		border-bottom: 1px solid rgba(255, 255, 255, 0);
 		border-top: 1px solid rgba(255, 255, 255, 0);
@@ -396,6 +398,34 @@ form {
 			margin-top: 60px;
 			margin-bottom: 60px;
 		}
+	}
+}
+
+.advantages {
+	.section-content-header::before {
+		content: "";
+			display: block;
+			width: 120px;
+			height: 120px;
+			background-repeat: none;
+			background-position: center;
+			margin: 20px auto;
+	}
+	.around-a-clock::before {
+		background-image: url('../img/circular-clock.png');
+		background-size: cover;
+	}
+	.effective::before {
+		background-image: url('../img/save.png');
+		background-size: cover;
+	}
+	.safely::before {
+		background-image: url('../img/file.png');
+		background-size: cover;
+	}
+	.fast::before {
+		background-image: url('../img/car.png');
+		background-size: cover;
 	}
 }
 
