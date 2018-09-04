@@ -12,6 +12,7 @@ const gulp        	= require('gulp'),
 			pngquant    = require('imagemin-pngquant'),
 			cache       = require('gulp-cache'),
 			notify        = require("gulp-notify");
+			deploy      = require('gulp-gh-pages');
 
 gulp.task('browser-sync', () => {
 	browsersync({
@@ -100,4 +101,12 @@ gulp.task('build', ['clean', 'img', 'sass', 'js'], () => {
 
 	const buildHtml = gulp.src('src/*.html')
     .pipe(gulp.dest('dist'));
+});
+
+gulp.task('deploy', () => {
+	return gulp.src("dist/**/*")
+		.pipe(deploy({ 
+			remoteUrl: "https://github.com/razamanaza/razamanaza.github.io.git",
+			branch: "master"
+		}));
 });
