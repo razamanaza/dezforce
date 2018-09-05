@@ -45,6 +45,11 @@
       display: none;
     }
   }
+  .work-order {
+    .col-md-4:nth-child(2)::before, .col-md-4:nth-child(3)::before {
+      display: none;
+    }
+  }
 }
 
 //Extra small: >0

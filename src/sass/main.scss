@@ -175,6 +175,7 @@ form {
 .call-to-action {
 	text-align: center;
 	display: block;
+	margin-top: 40px;
 }
 
 // block specific
@@ -432,8 +433,53 @@ form {
 		background-image: url('../img/car.png');
 		background-size: cover;
 	}
-	.call-to-action {
-		margin-top: 40px;
+}
+
+.work-order {
+	color: $text-inverse;
+	background-image: url('../img/workorder-bg.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: none;
+	background-size: cover;
+
+	.work-order-wrapper {
+		background-color: $wrapper-bg-bolor;
+		border-bottom: 1px solid rgba(255, 255, 255, 0);
+		border-top: 1px solid rgba(255, 255, 255, 0);
+	}
+	.container {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+	.col-md-4 {
+		padding-left: 30px;
+		padding-right: 30px;
+		position: relative;
+	}
+	.call::before {
+		content: '\f2a0';
+	}
+	.processing::before {
+		content: '\f134';
+	}
+	.prevention::before {
+		content: '\f13a';
+	}
+	.section-content-header::before {
+		font-family: FontAwesome;
+		font-size: 50px;
+		margin-right: 20px;
+		margin-left: -30px;
+	}
+	.col-md-4:nth-child(2)::before, .col-md-4:nth-child(3)::before {
+		content: '\f0a9';
+		font-family: FontAwesome;
+		font-size: 35px;
+		color: $maincolor;
+		position: absolute;
+		left: -20px;
+		top: 50%;
 	}
 }
 
