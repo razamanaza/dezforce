@@ -139,6 +139,10 @@ section {
 		text-align: center;
 		margin-bottom: 40px;
 	}
+	.container {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
 }
 
 .section-content-header {
@@ -314,8 +318,6 @@ form {
 		border-top: 1px solid rgba(255, 255, 255, 0);
 	}
 	.container {
-		margin-top: 60px;
-		margin-bottom: 60px;
 		text-align: center;
 		ul {
 			text-align: left;
@@ -400,10 +402,6 @@ form {
 		background-color: $wrapper-bg-bolor;
 		border-bottom: 1px solid rgba(255, 255, 255, 0);
 		border-top: 1px solid rgba(255, 255, 255, 0);
-		.container {
-			margin-top: 60px;
-			margin-bottom: 60px;
-		}
 	}
 }
 
@@ -448,10 +446,7 @@ form {
 		border-bottom: 1px solid rgba(255, 255, 255, 0);
 		border-top: 1px solid rgba(255, 255, 255, 0);
 	}
-	.container {
-		margin-top: 60px;
-		margin-bottom: 60px;
-	}
+
 	.col-md-4 {
 		padding-left: 30px;
 		padding-right: 30px;
