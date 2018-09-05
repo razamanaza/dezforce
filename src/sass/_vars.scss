@@ -1,4 +1,7 @@
 @import "mixins/mixins";
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables";
+
 
 $default-font: "OpenSans", sans-serif;
 $header-font: "Oswald", sans-serif;
