@@ -410,12 +410,12 @@ form {
 .advantages {
 	.section-content-header::before {
 		content: "";
-			display: block;
-			width: 120px;
-			height: 120px;
-			background-repeat: none;
-			background-position: center;
-			margin: 20px auto;
+		display: block;
+		width: 120px;
+		height: 120px;
+		background-repeat: none;
+		background-position: center;
+		margin: 20px auto;
 	}
 	.around-a-clock::before {
 		background-image: url('../img/circular-clock.png');
@@ -480,6 +480,38 @@ form {
 		position: absolute;
 		left: -20px;
 		top: 50%;
+	}
+}
+
+.services {
+	text-align: center;
+	.industrial-desinfection::before {
+		background-image: url('../img/industrial-desinfection.png');
+	}
+	.auto-desinfection::before {
+		background-image: url('../img/auto-desinfection.png');
+	}
+	.deratisation::before {
+		background-image: url('../img/deratisation.png');
+	}
+	.desinsection::before {
+		background-image: url('../img/desinsection.png');
+	}
+	.stinger-desinsection::before {
+		background-image: url('../img/stinger-desinsection.png');
+	}
+	.field-desinsection::before {
+		background-image: url('../img/field-desinsection.png');
+	}
+	p::before {
+		content: "";
+		display: block;
+		width: 120px;
+		height: 120px;
+		background-repeat: none;
+		background-position: center;
+		margin: 20px auto;
+		background-size: cover;
 	}
 }
 

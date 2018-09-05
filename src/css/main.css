@@ -290,14 +290,14 @@ a {
           border-radius: 2px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-  background-color: #dca71c;
+  background-color: #FF9900;
   color: #eee;
   -webkit-transition: background-color .3s;
   -o-transition: background-color .3s;
   transition: background-color .3s;
   cursor: pointer; }
   .btn:hover, .btn:focus {
-    background-color: #af8516; }
+    background-color: #cc7a00; }
   .btn:before {
     content: "";
     position: absolute;
@@ -407,7 +407,7 @@ form {
   .main-header .top-nav .main-header-phone i {
     margin-right: 10px;
     font-size: 32px;
-    color: #dca71c; }
+    color: #FF9900; }
   .main-header .top-nav .main-header-phone {
     font-size: 24px; }
   .main-header .top-nav .hamburger-inner, .main-header .top-nav .hamburger-inner:after, .main-header .top-nav .hamburger-inner:before {
@@ -423,7 +423,7 @@ form {
     .main-header .main-header-promo li:before {
       content: '\f105';
       font-family: FontAwesome;
-      color: #dca71c;
+      color: #FF9900;
       font-weight: bold;
       position: absolute;
       left: -30px; }
@@ -469,7 +469,7 @@ form {
   .method li:before {
     content: '\f14a';
     font-family: FontAwesome;
-    color: #dca71c;
+    color: #FF9900;
     font-weight: bold;
     position: absolute;
     left: -30px;
@@ -618,10 +618,35 @@ form {
     content: '\f0a9';
     font-family: FontAwesome;
     font-size: 35px;
-    color: #dca71c;
+    color: #FF9900;
     position: absolute;
     left: -20px;
     top: 50%; }
+
+.services {
+  text-align: center; }
+  .services .industrial-desinfection::before {
+    background-image: url("../img/industrial-desinfection.png"); }
+  .services .auto-desinfection::before {
+    background-image: url("../img/auto-desinfection.png"); }
+  .services .deratisation::before {
+    background-image: url("../img/deratisation.png"); }
+  .services .desinsection::before {
+    background-image: url("../img/desinsection.png"); }
+  .services .stinger-desinsection::before {
+    background-image: url("../img/stinger-desinsection.png"); }
+  .services .field-desinsection::before {
+    background-image: url("../img/field-desinsection.png"); }
+  .services p::before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-repeat: none;
+    background-position: center;
+    margin: 20px auto;
+    -webkit-background-size: cover;
+            background-size: cover; }
 
 /*!
  * Bootstrap Grid v4.1.3 (https://getbootstrap.com/)
