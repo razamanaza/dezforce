@@ -135,6 +135,7 @@ section {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0);
+	border-top: 1px solid rgba(255, 255, 255, 0);
 	h2, h3, h4, h5, h6 {
 		text-align: center;
 		margin-bottom: 40px;
@@ -507,6 +508,35 @@ form {
 		background-position: center;
 		margin: 20px auto;
 		background-size: cover;
+	}
+}
+
+.prices {
+	background-color: lighten( $wrapper-bg-bolor, 70% );
+	form {
+		ul {
+			list-style: none;
+			text-align: left;
+			font-size: 16px;
+			li {
+				position: relative;
+			}
+			li::before {
+				content: '\f14a';
+				font-family: FontAwesome;
+				color: $maincolor;
+				font-weight: bold;
+				position: absolute;
+				left: -30px;
+				font-size: 18px;
+			}
+		}
+		p {
+			font-size: 14px;
+		}
+		.intro {
+			font-size: 13px;
+		}
 	}
 }
 
