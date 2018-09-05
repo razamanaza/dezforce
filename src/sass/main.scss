@@ -172,6 +172,11 @@ form {
 	}
 }
 
+.call-to-action {
+	text-align: center;
+	display: block;
+}
+
 // block specific
 .mm-panels {
 	.mm-navbar .mm-navbar__title {
@@ -426,6 +431,9 @@ form {
 	.fast::before {
 		background-image: url('../img/car.png');
 		background-size: cover;
+	}
+	.call-to-action {
+		margin-top: 40px;
 	}
 }
 
