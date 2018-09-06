@@ -57,6 +57,7 @@ gulp.task('js', () => {
 		'node_modules/jquery.mmenu/dist/addons/pagescroll/jquery.mmenu.pagescroll.js',
 		'node_modules/jquery-sticky/jquery.sticky.js',
 		'node_modules/jq-accordion/dist/js/jquery.accordion.js',
+		'node_modules/bootstrap/js/dist/util.js',
 		'node_modules/bootstrap/js/dist/modal.js',
 		'src/js/common.js', // Always at the end
 		])

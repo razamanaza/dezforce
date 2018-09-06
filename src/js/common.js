@@ -30,4 +30,14 @@ $(document).ready(function() {
       "transitionSpeed": 400
   });
 
+  $('#modal-form').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var buttontext = button.data('button') // Extract info from data-* attributes
+    var header = button.data('header')
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    modal.find('.modal-body .form-header').text(header)
+    modal.find('.modal-body .submit').val(buttontext)
+  });
+
 });

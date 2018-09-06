@@ -44,6 +44,7 @@
 												<li><a href="#advantages">Преимущества</a></li>
 												<li><a href="#work-order">Как мы работаем</a></li>
 												<li><a href="#services">Услуги</a></li>
+												<li><a href="#prices">Цены</a></li>
 												<li><a href="#faq">Как подготовить помещение</a></li>
 											</ul>
 										</nav>
@@ -104,7 +105,7 @@
 						<li>Проводим лабораторные исследования</li>
 						<li>Предоставляем гарантию до 1 года на каждую услугу</li>
 					</ul>
-					<a href="#" class="btn">Заказать обработку</a>
+					<a href="#" class="btn"  data-toggle="modal" data-target="#modal-form">Заказать обработку</a>
 				</div>
 		</div>
 		</section>
@@ -185,7 +186,7 @@
 					</div>
 				</div>
 				<dv class="call-to-action">
-						<a href="#" class="btn">Вызвать специалиста</a>										
+						<a href="#" class="btn" data-toggle="modal" data-target="#modal-form" data-button="Вызвать специалиста" data-header="Оставить заявку на вызов специалиста">Вызвать специалиста</a>										
 				</dv>
 			</div>
 		</section>
@@ -209,7 +210,7 @@
 						</div>
 					</div>
 					<dv class="call-to-action">
-							<a href="#" class="btn">Оставить заявку</a>										
+							<a href="#" class="btn" data-toggle="modal" data-target="#modal-form" data-button="Оставить заявку" data-header="Оставить заявку на обработку">Оставить заявку</a>										
 					</dv>
 				</div>
 			</div>
@@ -351,7 +352,7 @@
 						</div>
 				</div>
 				<div class="call-to-action">
-					<a href="#" class="btn">Остались вопросы?</a>
+					<a href="#" class="btn" data-toggle="modal" data-target="#modal-form" data-button="Задать вопрос" data-header="Задать вопрос специалисту компании">Остались вопросы?</a>
 				</div>
 			</div>
 		</section>
@@ -363,6 +364,25 @@
 			</div>
 		</footer>
 	</div>
+
+	<div class="modal fade" id="modal-form" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close btn" data-dismiss="modal">
+							<span>&times;</span>
+						</button>
+						<form action="#" method="POST" id="modal-form" name="solutions-form">
+							<p class="form-header">Заказать обработку</p>
+							<p>Введите номер телефона, специалист перезвонит вам в течение 10 минут</p>
+							<input type="tel" name="phone" placeholder="Номер телефона" pattern="[0-9]{7,11}" required>
+							<input type="submit" value="Заказать обработку" class="btn submit">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>

@@ -214,6 +214,7 @@ form {
 
 
 // block specific
+.mm-slideout { z-index:auto !important;}
 .mm-panels {
 	.mm-navbar .mm-navbar__title {
 		color: $text-inverse;
@@ -583,6 +584,17 @@ form {
 	.container {
 		margin-top: 30px;
 		margin-bottom: 30px;
+	}
+}
+
+.modal {
+	.close {
+		position: absolute;
+    padding: 0;
+    right: 20px;
+	}
+	form {
+		padding-top: 50px;
 	}
 }
 
