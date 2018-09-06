@@ -24,4 +24,10 @@ $(document).ready(function() {
 
   //sticky menu
   $(".top-nav").sticky({topSpacing:0, zIndex: 100});
+
+  //accordion
+  $('.accordion').accordion({
+      "transitionSpeed": 400
+  });
+
 });

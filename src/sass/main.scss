@@ -7,7 +7,7 @@
 @import "../../node_modules/bootstrap/scss/mixins/_box-shadow";
 @import "../../node_modules/bootstrap/scss/_modal";
 @import "../../node_modules/bootstrap/scss/mixins/_hover";
-@import "../../node_modules/bootstrap/scss/_card";
+
 
 ::placeholder {
 	color: #ccc;
@@ -188,6 +188,30 @@ form {
 	display: block;
 	margin-top: 40px;
 }
+.accordion-group {
+	.accordion {
+		
+		[data-control] {
+			border-bottom-color: $maincolor;
+			padding: 5px;
+			font-weight: bold;
+			cursor: pointer;
+			&::after {
+				top: 25px;
+			}
+		}
+		[data-content] {
+			p {
+				border: none;
+				line-height: 1.65;
+				margin-left: 30px;
+			}
+		}
+
+	}
+}
+
+
 
 // block specific
 .mm-panels {
