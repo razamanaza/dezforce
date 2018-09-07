@@ -40,4 +40,12 @@ $(document).ready(function() {
     modal.find('.modal-body .submit').val(buttontext)
   });
 
+  if (window.location.hash == '#thanks') {
+    $('#modal-thanks').modal('show')
+  }
+
+  $('#modal-thanks').on('hidden.bs.modal', function (e) {
+    window.location = "/";
+  })
+
 });

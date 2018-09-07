@@ -68,6 +68,8 @@
 								<p class="form-header">Бесплатная консультация</p>
 								<p>Введите номер телефона, специалист перезвонит вам в течение 10 минут</p>
 								<input type="tel" name="phone" placeholder="Номер телефона" pattern="[0-9]{7,11}" required>
+								<input type="text" class="gotcha" name="_gotcha">
+								<input type="hidden" name="_language" value="ru" />
 								<input type="submit" value="Получить консультацию" class="btn">
 							</form>
 						</div>
@@ -105,7 +107,7 @@
 						<li>Проводим лабораторные исследования</li>
 						<li>Предоставляем гарантию до 1 года на каждую услугу</li>
 					</ul>
-					<a href="#" class="btn"  data-toggle="modal" data-target="#modal-form">Заказать обработку</a>
+					<a href="#" class="btn"  data-toggle="modal" data-target="#modal-form" data-button="Заказать обработку" data-header="Заказать обработку">Заказать обработку</a>
 				</div>
 		</div>
 		</section>
@@ -154,6 +156,8 @@
 								<p class="form-header">Бесплатная консультация</p>
 								<p>Введите номер телефона, специалист перезвонит вам в течение 10 минут</p>
 								<input type="tel" name="phone" placeholder="Номер телефона" pattern="[0-9]{7,11}" required>
+								<input type="text" class="gotcha" name="_gotcha">
+								<input type="hidden" name="_language" value="ru" />
 								<input type="submit" value="Получить консультацию" class="btn">
 							</form>
 						</div>
@@ -258,6 +262,8 @@
 							</ul>
 							<p>Более точную стоимость вы можете узнать у оператора по телефону</p>
 							<input type="tel" name="phone" placeholder="Номер телефона" pattern="[0-9]{7,11}" required>
+							<input type="text" class="gotcha" name="_gotcha">
+							<input type="hidden" name="_language" value="ru" />
 							<input type="submit" value="Рассчитать стоимость" class="btn">
 						</form>
 					</div>
@@ -372,14 +378,26 @@
 						<button type="button" class="close btn" data-dismiss="modal">
 							<span>&times;</span>
 						</button>
-						<form action="#" method="POST" id="modal-form" name="solutions-form">
+						<form action="https://formsubmit.io/send/e4972b46-b1a4-4a40-9eee-1d0bc8483ab4 " method="POST" id="modal-form" name="solutions-form">
 							<p class="form-header">Заказать обработку</p>
 							<p>Введите номер телефона, специалист перезвонит вам в течение 10 минут</p>
 							<input type="tel" name="phone" placeholder="Номер телефона" pattern="[0-9]{7,11}" required>
+							<input name="_formsubmit_id" type="text" class="gotcha">
+							<input type="hidden" name="_redirect" value="http://localhost:3000/#thanks" />
 							<input type="submit" value="Заказать обработку" class="btn submit">
 						</form>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal-thanks">
+			<div class="modal-dialog">
+					<div class="modal-body">
+						<button type="button" class="close btn" data-dismiss="modal">
+							<span>&times;</span>
+						</button>
+						<p class="section-content-header">Спасибо за обращение. Наш оператор свяжется с вами в ближайшее время.</p>
+					</div>
 			</div>
 		</div>
 	

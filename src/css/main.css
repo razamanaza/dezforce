@@ -560,6 +560,9 @@ form {
   line-height: 1.65;
   margin-left: 30px; }
 
+.gotcha {
+  display: none; }
+
 .mm-slideout {
   z-index: auto !important; }
 
@@ -872,6 +875,11 @@ form {
 
 .modal form {
   padding-top: 50px; }
+
+.modal .modal-body {
+  background-color: #fff; }
+  .modal .modal-body .section-content-header {
+    margin-top: 60px; }
 
 /*!
  * Bootstrap Grid v4.1.3 (https://getbootstrap.com/)

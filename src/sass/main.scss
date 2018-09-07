@@ -211,7 +211,9 @@ form {
 	}
 }
 
-
+.gotcha {
+	display: none;
+}
 
 // block specific
 .mm-slideout { z-index:auto !important;}
@@ -595,6 +597,12 @@ form {
 	}
 	form {
 		padding-top: 50px;
+	}
+	.modal-body {
+		background-color: #fff;
+		.section-content-header {
+			margin-top: 60px;
+		}
 	}
 }
 
