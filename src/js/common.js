@@ -67,4 +67,20 @@ $(document).ready(function() {
     $('.calc-form-answer').text(areaText);
   });
 
+  $('#modal-form .phone').change(function() {
+    $('#modal-form .subject').val("Сообщение с сайта. тел: " + $(this).val());
+  });
+
+  $('#prices-form .phone').change(function() {
+    $('#prices-form .subject').val("Сообщение с сайта. тел: " + $(this).val());
+  });
+
+  $('#solutions-form .phone').change(function() {
+    $('#solutions-form .subject').val("Сообщение с сайта. тел: " + $(this).val());
+  });
+
+  $('#header-form .phone').change(function() {
+    $('#header-form .subject').val("Сообщение с сайта. тел: " + $(this).val());
+  });
+
 });

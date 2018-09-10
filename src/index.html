@@ -64,12 +64,13 @@
 							</ul>
 						</div>
 						<div class="main-header-form col-md-12 col-lg-4">
-							<form action="#" method="POST" id="header-form" name="header-form">
+							<form action="https://jumprock.co/mail/dezforcesms" method="POST" id="header-form" name="header-form">
 								<p class="form-header">Бесплатная консультация</p>
 								<p>Введите номер телефона, специалист перезвонит вам в течение 10 минут</p>
-								<input type="tel" name="phone" placeholder="Номер телефона" pattern="[0-9]{7,11}" required>
-								<input type="text" class="gotcha" name="_gotcha">
-								<input type="hidden" name="_language" value="ru" />
+								<input type="tel" name="phone" class="phone" placeholder="Номер телефона" pattern="[0-9]{7,11}" required>
+								<input name="subject" value="" class="subject hidden">
+								<input type="text" name="trapit" value="" class="gotcha">
+								<input type="hidden" name="after"  value="http://localhost:3000/#thanks" />
 								<input type="submit" value="Получить консультацию" class="btn">
 							</form>
 						</div>
@@ -152,12 +153,13 @@
 							<p>Получите бесплатную консультацию специалиста прямо сейчас!</p>
 						</div>
 						<div class="col-md-6">
-							<form action="#" method="POST" id="solutions-form" name="solutions-form">
+							<form action="https://jumprock.co/mail/dezforcesms" method="POST" id="solutions-form" name="solutions-form">
 								<p class="form-header">Бесплатная консультация</p>
 								<p>Введите номер телефона, специалист перезвонит вам в течение 10 минут</p>
-								<input type="tel" name="phone" placeholder="Номер телефона" pattern="[0-9]{7,11}" required>
-								<input type="text" class="gotcha" name="_gotcha">
-								<input type="hidden" name="_language" value="ru" />
+								<input type="tel" name="phone" class="phone" placeholder="Номер телефона" pattern="[0-9]{7,11}" required>
+								<input name="subject" value="" class="subject hidden">
+								<input type="text" name="trapit" value="" class="gotcha">
+								<input type="hidden" name="after"  value="http://localhost:3000/#thanks" />
 								<input type="submit" value="Получить консультацию" class="btn">
 							</form>
 						</div>
@@ -253,7 +255,7 @@
 				<h2>Цены</h2>
 				<div class="row">
 					<div class="col-md-6">
-						<form action="#" method="POST" id="prices-form" name="prices-form">
+						<form action="https://jumprock.co/mail/dezforcesms" method="POST" id="prices-form" name="prices-form">
 							<p class="intro">Стоимость производимых работ зависит от: значимости объекта, санитарно-технического состояния, кратности проведения работ, местонахождения объекта, вида и назначения помещений</p>
 							<ul>
 								<li>Дезинфекционная обработка автотранспорта <strong>от 500 рублей</strong></li>
@@ -261,9 +263,10 @@
 								<li>Мойка контейнера <strong>от 700 рублей</strong></li>
 							</ul>
 							<p>Более точную стоимость вы можете узнать у оператора по телефону</p>
-							<input type="tel" name="phone" placeholder="Номер телефона" pattern="[0-9]{7,11}" required>
-							<input type="text" class="gotcha" name="_gotcha">
-							<input type="hidden" name="_language" value="ru" />
+							<input type="tel" name="phone" class="phone" placeholder="Номер телефона" pattern="[0-9]{7,11}" required>
+							<input name="subject" value="" class="subject hidden">
+							<input type="text" name="trapit" value="" class="gotcha">
+							<input type="hidden" name="after"  value="http://localhost:3000/#thanks" />
 							<input type="submit" value="Рассчитать стоимость" class="btn">
 						</form>
 					</div>
@@ -427,12 +430,13 @@
 						<button type="button" class="close btn" data-dismiss="modal">
 							<span>&times;</span>
 						</button>
-						<form action="https://formsubmit.io/send/e4972b46-b1a4-4a40-9eee-1d0bc8483ab4 " method="POST" id="modal-form" name="solutions-form">
+						<form action="https://jumprock.co/mail/dezforcesms" method="POST" id="modal-form" name="solutions-form">
 							<p class="form-header">Заказать обработку</p>
 							<p>Введите номер телефона, специалист перезвонит вам в течение 10 минут</p>
-							<input type="tel" name="phone" placeholder="Номер телефона" pattern="[0-9]{7,11}" required>
-							<input name="_formsubmit_id" type="text" class="gotcha">
-							<input type="hidden" name="_redirect" value="http://localhost:3000/#thanks" />
+							<input type="tel" name="phone" class="phone" placeholder="Номер телефона" pattern="[0-9]{7,11}" required>
+							<input name="subject" value="" class="subject hidden">
+							<input type="text" name="trapit" value="" class="gotcha">
+							<input type="hidden" name="after"  value="http://localhost:3000/#thanks" />
 							<input type="submit" value="Заказать обработку" class="btn submit">
 						</form>
 					</div>
@@ -451,5 +455,6 @@
 		</div>
 	
 	<script src="js/scripts.min.js"></script>
+	<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter50290435 = new Ya.Metrika2({ id:50290435, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/50290435" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </body>
 </html>
