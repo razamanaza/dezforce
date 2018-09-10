@@ -13,7 +13,7 @@ $(document).ready(function() {
     pageScroll: true
   });
 
-  var api = $("#mmenu").data( "mmenu" );
+  var api = $('#mmenu').data( 'mmenu' );
 
   api.bind('open:start', function() {
     $('.hamburger').addClass('is-active');
@@ -23,11 +23,11 @@ $(document).ready(function() {
   });
 
   //sticky menu
-  $(".top-nav").sticky({topSpacing:0, zIndex: 100});
+  $('.top-nav').sticky({topSpacing:0, zIndex: 100});
 
   //accordion
   $('.accordion').accordion({
-      "transitionSpeed": 400
+      'transitionSpeed': 400
   });
 
   $('#modal-form').on('show.bs.modal', function (event) {
@@ -45,7 +45,26 @@ $(document).ready(function() {
   }
 
   $('#modal-thanks').on('hidden.bs.modal', function (e) {
-    window.location = "/";
-  })
+    window.location = '/';
+  });
+
+  $('#form-service').change(function() {
+    $('.area-selectors .visible').removeClass('visible');
+    var selector = $(this).val();
+    $('#form-' + selector).addClass('visible');
+    $('#form-' + selector).val('');
+    $('.calc-form-answer').text('');
+  });
+
+  $('#calc-form').on('change', '.area-selectors select', function() {
+    var areas = {
+      dezinfection: ['от 1 500 рублей', 'от 2 500 рублей', 'от 3 500 рублей', 'от 4 500 рублей', 'от 5 500 рублей'],
+      dezinsectionHome: ['1300 рублей', '1500 рублей', '2000 рублей', '2500 рублей', 'от 3000 рублей'],
+      dezinsectionIndustrial: ['от 2 000 рублей', 'от 3 000 рублей', 'от 4 000 рублей', 'от 5 000 рублей', 'от 6 000 рублей'],
+      deratization: ['от 900 рублей', 'от 1 300 рублей', 'от 1 500 рублей', 'от 2 000 рублей', 'от 2 500 рублей']
+    };
+    var areaText = areas[$('#form-service').val()][$(this).val()];
+    $('.calc-form-answer').text(areaText);
+  });
 
 });

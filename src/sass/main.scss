@@ -7,6 +7,9 @@
 @import "../../node_modules/bootstrap/scss/mixins/_box-shadow";
 @import "../../node_modules/bootstrap/scss/_modal";
 @import "../../node_modules/bootstrap/scss/mixins/_hover";
+@import "../../node_modules/bootstrap/scss/mixins/_forms";
+@import "../../node_modules/bootstrap/scss/mixins/_gradients";
+@import "../../node_modules/bootstrap/scss/_forms";
 
 
 ::placeholder {
@@ -210,9 +213,32 @@ form {
 
 	}
 }
-
-.gotcha {
+.gotcha, .hidden {
 	display: none;
+}
+.form-control:focus {
+	border-color: $accent;
+	box-shadow: 0 0 0 0.2rem rgba(237, 203, 113, 0.45);
+}
+.calc-form {
+	fieldset {
+		border: none;
+	}
+	select {
+		display: none;
+		margin-top: 5px;
+	}
+	.visible {
+		display: block;
+	}
+	.form-group {
+		text-align: left;
+		margin-top: 10px;
+	}
+	.calc-form-answer {
+		text-align: left;
+		font-weight: bold;
+	}
 }
 
 // block specific
