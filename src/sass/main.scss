@@ -351,6 +351,10 @@ form {
 		background-image: url("../img/shield.png");
 		background-size: cover;
 	}
+	.reasons-disclaimer {
+		font-weight: bold;
+    font-size: 14px;
+	}
 }
 
 .method {
@@ -612,6 +616,9 @@ form {
 	.container {
 		margin-top: 30px;
 		margin-bottom: 30px;
+	}
+	.fa {
+		margin-right: 5px;
 	}
 }
 

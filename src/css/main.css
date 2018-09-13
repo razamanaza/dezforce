@@ -1121,6 +1121,10 @@ form {
   -webkit-background-size: cover;
           background-size: cover; }
 
+.reasons .reasons-disclaimer {
+  font-weight: bold;
+  font-size: 14px; }
+
 .method {
   background-image: url("../img/method-bg.jpg");
   background-repeat: none;
@@ -1334,6 +1338,8 @@ form {
   .main-footer .container {
     margin-top: 30px;
     margin-bottom: 30px; }
+  .main-footer .fa {
+    margin-right: 5px; }
 
 .modal .close {
   position: absolute;
