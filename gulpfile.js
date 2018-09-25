@@ -105,6 +105,9 @@ gulp.task('build', ['clean', 'img', 'sass', 'js'], () => {
 		.pipe(gulp.dest('dist/js'));
 
 	const buildHtml = gulp.src('src/*.html')
+		.pipe(gulp.dest('dist'));
+		
+		const buildTxt = gulp.src('src/*.txt')
     .pipe(gulp.dest('dist'));
 });
 
