@@ -60,6 +60,7 @@ $(document).ready(function() {
     items: 1,
     loop: true,
     autoplay: true,
+    autoHeight: true,
   });
 
   $('#calc-form').on('change', '.area-selectors select', function() {

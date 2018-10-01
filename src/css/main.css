@@ -1345,6 +1345,9 @@ form {
       font-weight: 200;
       font-style: normal; }
 
+.faq {
+  margin-top: 0; }
+
 .main-footer {
   color: #eee;
   background-color: #333;
