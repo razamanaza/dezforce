@@ -408,9 +408,6 @@
   .form-control::-moz-placeholder {
     color: #6c757d;
     opacity: 1; }
-  .form-control:-ms-input-placeholder {
-    color: #6c757d;
-    opacity: 1; }
   .form-control::-ms-input-placeholder {
     color: #6c757d;
     opacity: 1; }
@@ -818,12 +815,6 @@ textarea.form-control {
   transition: 0.2s ease-in; }
 
 ::-moz-placeholder {
-  color: #ccc;
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
-  transition: 0.2s ease-in; }
-
-:-ms-input-placeholder {
   color: #ccc;
   -webkit-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
