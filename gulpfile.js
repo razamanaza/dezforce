@@ -11,7 +11,7 @@ const gulp        	= require('gulp'),
 			imagemin    = require('gulp-imagemin'),
 			pngquant    = require('imagemin-pngquant'),
 			cache       = require('gulp-cache'),
-			notify        = require("gulp-notify");
+			notify        = require('gulp-notify');
 			deploy      = require('gulp-gh-pages');
 
 gulp.task('browser-sync', () => {
@@ -110,14 +110,17 @@ gulp.task('build', ['clean', 'img', 'sass', 'js'], () => {
 	const buildHtml = gulp.src('src/*.html')
 		.pipe(gulp.dest('dist'));
 		
-		const buildTxt = gulp.src('src/*.txt')
-    .pipe(gulp.dest('dist'));
+	const buildTxt = gulp.src('src/*.txt')
+		.pipe(gulp.dest('dist'));
+	
+	const buildSitemap = 	gulp.src('src/sitemap.xml')
+		.pipe(gulp.dest('dist'));
 });
 
 gulp.task('deploy', () => {
-	return gulp.src("dist/**/*")
+	return gulp.src('dist/**/*')
 		.pipe(deploy({ 
-			remoteUrl: "https://github.com/dezforce/dezforce.github.io.git",
-			branch: "master"
+			remoteUrl: 'https://github.com/dezforce/dezforce.github.io.git',
+			branch: 'master',
 		}));
 });
