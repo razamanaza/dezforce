@@ -38,6 +38,8 @@ gulp.task('css-libs', ['sass'], function() {
 		'node_modules/jquery.mmenu/dist/jquery.mmenu.all.css',
 		'node_modules/hamburgers/dist/hamburgers.min.css',
 		'node_modules/jq-accordion/dist/css/jquery.accordion.css',
+		'node_modules/owl.carousel2/dist/assets/owl.carousel.min.css',
+		'node_modules/owl.carousel2/dist/assets/owl.theme.default.min.css',
 	])
 	.pipe(concat('libs.min.css'))
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
@@ -59,6 +61,7 @@ gulp.task('js', () => {
 		'node_modules/jq-accordion/dist/js/jquery.accordion.js',
 		'node_modules/bootstrap/js/dist/util.js',
 		'node_modules/bootstrap/js/dist/modal.js',
+		'node_modules/owl.carousel2/dist/owl.carousel.min.js',
 		'src/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

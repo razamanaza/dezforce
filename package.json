@@ -37,6 +37,7 @@
     "html5-boilerplate": "^6.1.0",
     "imagemin-pngquant": "^5.1.0",
     "jq-accordion": "^1.0.3",
-    "jquery-sticky": "^1.0.4"
+    "jquery-sticky": "^1.0.4",
+    "owl.carousel2": "^2.2.1"
   }
 }

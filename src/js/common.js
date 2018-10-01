@@ -56,6 +56,12 @@ $(document).ready(function() {
     $('.calc-form-answer').text('');
   });
 
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+  });
+
   $('#calc-form').on('change', '.area-selectors select', function() {
     var areas = {
       dezinfection: ['от 1 500 рублей', 'от 2 500 рублей', 'от 3 500 рублей', 'от 4 500 рублей', 'от 5 500 рублей'],

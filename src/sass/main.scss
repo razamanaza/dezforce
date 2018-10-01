@@ -604,6 +604,22 @@ form {
 	}
 }
 
+.reviews {
+	blockquote {
+		position: relative;
+		footer {
+			font-family: $header-font;
+			text-align: right;
+			font-size: 18px;
+			cite {
+				margin-left: 15px;
+				font-weight: 200;
+				font-style: normal;
+			}
+		}
+	}
+}
+
 .main-footer {
 	color: $text-inverse;
 	background-color: #333;
