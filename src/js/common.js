@@ -61,6 +61,7 @@ $(document).ready(function() {
     loop: true,
     autoplay: true,
     autoHeight: true,
+    autoplayTimeout: 13000,
   });
 
   $('#calc-form').on('change', '.area-selectors select', function() {

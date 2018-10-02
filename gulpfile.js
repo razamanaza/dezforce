@@ -11,7 +11,7 @@ const gulp        	= require('gulp'),
 			imagemin    = require('gulp-imagemin'),
 			pngquant    = require('imagemin-pngquant'),
 			cache       = require('gulp-cache'),
-			notify        = require('gulp-notify');
+			notify        = require('gulp-notify'),
 			deploy      = require('gulp-gh-pages');
 
 gulp.task('browser-sync', () => {
