@@ -577,6 +577,9 @@ form {
 
 .prices {
 	background-color: lighten( $wrapper-bg-bolor, 70% );
+	.prices-section {
+		margin-top: 15px;
+	}
 	form {
 		ul {
 			list-style: none;

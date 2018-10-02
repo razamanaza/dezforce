@@ -1306,6 +1306,8 @@ form {
 
 .prices {
   background-color: rgba(179, 179, 179, 0.7); }
+  .prices .prices-section {
+    margin-top: 15px; }
   .prices form ul {
     list-style: none;
     text-align: left;
