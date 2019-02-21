@@ -291,10 +291,12 @@ form {
 		.main-header-hamburger {
 			margin-top: 5px;
 		}
-		.main-header-phone i, .main-header-vk i {
-			margin-right: 10px;
-			font-size: 32px;
-			color: $maincolor;
+		.main-header-phone, .main-header-vk, .main-header-instagram {
+			i {
+				margin-right: 10px;
+				font-size: 32px;
+				color: $maincolor;
+			}
 		}
 		.main-header-phone {
 			font-size: 24px;
