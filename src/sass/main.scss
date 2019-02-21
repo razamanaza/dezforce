@@ -276,16 +276,22 @@ form {
 				margin-top: 7px;
 			}
 		}
+		.header-nav {
+			position: relative;
+			text-align: right;
+			a {
+				margin-right: 15px;
+			}
+		}
 		.main-header-hamburger, .main-header-phone {
 			line-height: 75px;
-			float: right;
 			padding: 0;
-			margin-left: 20px;
+			margin-right: 20px;
 		}
 		.main-header-hamburger {
 			margin-top: 5px;
 		}
-		.main-header-phone i {
+		.main-header-phone i, .main-header-vk i {
 			margin-right: 10px;
 			font-size: 32px;
 			color: $maincolor;
