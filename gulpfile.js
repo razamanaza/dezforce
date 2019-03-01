@@ -8,8 +8,6 @@ const gulp        	= require('gulp'),
 			cleancss      = require('gulp-clean-css'),
 			rename        = require('gulp-rename'),
 			autoprefixer  = require('gulp-autoprefixer'),
-			imagemin    = require('gulp-imagemin'),
-			pngquant    = require('imagemin-pngquant'),
 			cache       = require('gulp-cache'),
 			notify        = require('gulp-notify'),
 			deploy      = require('gulp-gh-pages');
@@ -72,13 +70,7 @@ gulp.task('js', () => {
 
 gulp.task('img', function() {
 	return gulp.src('src/img/**/*') 
-			.pipe(cache(imagemin({
-					interlaced: true,
-					progressive: true,
-					svgoPlugins: [{removeViewBox: false}],
-					use: [pngquant()]
-			})))
-			.pipe(gulp.dest('dist/img')); 
+		.pipe(gulp.dest('dist/img')); 
 });
 
 gulp.task('clean', function() {

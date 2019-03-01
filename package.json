@@ -26,7 +26,6 @@
     "gulp-clean-css": "^3.9.2",
     "gulp-concat": "^2.6.1",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-imagemin": "^4.1.0",
     "gulp-notify": "^3.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
@@ -35,7 +34,6 @@
     "gulp-util": "^3.0.8",
     "hamburgers": "^0.9.3",
     "html5-boilerplate": "^6.1.0",
-    "imagemin-pngquant": "^5.1.0",
     "jq-accordion": "^1.0.3",
     "jquery-sticky": "^1.0.4",
     "owl.carousel2": "^2.2.1"
