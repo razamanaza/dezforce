@@ -10,7 +10,7 @@ const gulp        	= require('gulp'),
 			autoprefixer  = require('gulp-autoprefixer'),
 			cache       = require('gulp-cache'),
 			notify        = require('gulp-notify'),
-			deploy      = require('gulp-gh-pages');
+			deploy      = require('gulp-gh-pages-will');
 
 gulp.task('browser-sync', () => {
 	browsersync({
