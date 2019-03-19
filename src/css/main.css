@@ -1118,6 +1118,9 @@ form {
   text-align: left;
   font-weight: bold; }
 
+.wrapper {
+  padding-bottom: 50px; }
+
 .mm-slideout {
   z-index: auto !important; }
 
@@ -1136,13 +1139,13 @@ form {
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.6); }
+  background-color: rgba(0, 0, 0, 0.8); }
   .main-header a {
     color: #eee; }
   .main-header .is-sticky .top-nav {
     background-color: rgba(0, 0, 0, 0.8); }
   .main-header .main-header-wrapper {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
     border-bottom: 1px solid; }
   .main-header .top-nav .header-logo img {
     margin-top: 7px; }
@@ -1168,7 +1171,7 @@ form {
   .main-header .main-header-promo {
     margin-top: 60px;
     margin-bottom: 60px;
-    font-size: 24px; }
+    font-size: 22px; }
     .main-header .main-header-promo h1 {
       margin-top: 0;
       font-size: 28px; }
@@ -1237,7 +1240,7 @@ form {
     margin-bottom: 15px;
     position: relative; }
   .method .method-wrapper {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
     border-bottom: 1px solid rgba(255, 255, 255, 0);
     border-top: 1px solid rgba(255, 255, 255, 0); }
   .method .container {
@@ -1304,7 +1307,7 @@ form {
   -webkit-background-size: cover;
           background-size: cover; }
   .solutions .solutions-wrapper {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
     border-bottom: 1px solid rgba(255, 255, 255, 0);
     border-top: 1px solid rgba(255, 255, 255, 0); }
 
@@ -1346,7 +1349,7 @@ form {
   -webkit-background-size: cover;
           background-size: cover; }
   .work-order .work-order-wrapper {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
     border-bottom: 1px solid rgba(255, 255, 255, 0);
     border-top: 1px solid rgba(255, 255, 255, 0); }
   .work-order .col-md-4 {
@@ -1399,7 +1402,7 @@ form {
             background-size: cover; }
 
 .prices {
-  background-color: rgba(179, 179, 179, 0.7); }
+  background-color: rgba(179, 179, 179, 0.4); }
   .prices .prices-section {
     margin-top: 15px; }
   .prices form ul {

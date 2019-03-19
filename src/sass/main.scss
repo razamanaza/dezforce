@@ -242,6 +242,10 @@ form {
 	}
 }
 
+.wrapper {
+	padding-bottom: 50px;
+}
+
 // block specific
 .mm-slideout { z-index:auto !important;}
 .mm-panels {
@@ -260,7 +264,7 @@ form {
 	background-repeat: none;
 	background-size: cover;
 	background-position: center;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.8);
 	a {
 		color: $text-inverse;
 	}
@@ -309,7 +313,7 @@ form {
 	.main-header-promo {
 		margin-top: 60px;
 		margin-bottom: 60px;
-		font-size: 24px;
+		font-size: 22px;
 		h1 {
 			margin-top: 0;
 			font-size: 28px;
