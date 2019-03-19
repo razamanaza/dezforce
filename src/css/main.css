@@ -1188,6 +1188,9 @@ form {
       list-style: none;
       margin-bottom: 15px;
       position: relative; }
+    .main-header .main-header-promo form {
+      background-color: rgba(0, 0, 0, 0.3);
+      color: #eee; }
 
 .reasons p {
   text-align: center; }

@@ -334,7 +334,11 @@ form {
 			margin-bottom: 15px;
 			position: relative;
 		}
-			}
+		form {
+			background-color: rgba(0, 0, 0, .3);
+			color: #eee;
+		}
+	}
 }
 
 .reasons {
