@@ -904,6 +904,58 @@ textarea.form-control {
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden; }
+  .embed-responsive::before {
+    display: block;
+    content: ""; }
+  .embed-responsive .embed-responsive-item,
+  .embed-responsive iframe,
+  .embed-responsive embed,
+  .embed-responsive object,
+  .embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; }
+
+.embed-responsive-21by9::before {
+  padding-top: 42.85714%; }
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%; }
+
+.embed-responsive-4by3::before {
+  padding-top: 75%; }
+
+.embed-responsive-1by1::before {
+  padding-top: 100%; }
+
+.align-baseline {
+  vertical-align: baseline !important; }
+
+.align-top {
+  vertical-align: top !important; }
+
+.align-middle {
+  vertical-align: middle !important; }
+
+.align-bottom {
+  vertical-align: bottom !important; }
+
+.align-text-bottom {
+  vertical-align: text-bottom !important; }
+
+.align-text-top {
+  vertical-align: text-top !important; }
+
 ::-webkit-input-placeholder {
   color: #ccc;
   -webkit-transition: 0.2s ease-in;
@@ -1351,35 +1403,6 @@ form {
   -webkit-background-size: cover;
           background-size: cover; }
 
-.work-order .col-md-4 {
-  padding-left: 30px;
-  padding-right: 30px;
-  position: relative; }
-
-.work-order .call::before {
-  content: '\f2a0'; }
-
-.work-order .processing::before {
-  content: '\f134'; }
-
-.work-order .prevention::before {
-  content: '\f13a'; }
-
-.work-order .section-content-header::before {
-  font-family: FontAwesome;
-  font-size: 50px;
-  margin-right: 20px;
-  margin-left: -30px; }
-
-.work-order .col-md-4:nth-child(2)::before, .work-order .col-md-4:nth-child(3)::before {
-  content: '\f0a9';
-  font-family: FontAwesome;
-  font-size: 35px;
-  color: #FF9900;
-  position: absolute;
-  left: -20px;
-  top: 50%; }
-
 .services {
   text-align: center; }
   .services .industrial-desinfection::before {
@@ -1445,6 +1468,9 @@ form {
 .we-were-chosen {
   text-align: center;
   background-color: rgba(179, 179, 179, 0.4); }
+
+.map {
+  margin-bottom: 0; }
 
 .main-footer {
   color: #eee;

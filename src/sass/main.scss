@@ -11,6 +11,8 @@
 @import "../../node_modules/bootstrap/scss/mixins/_forms";
 @import "../../node_modules/bootstrap/scss/mixins/_gradients";
 @import "../../node_modules/bootstrap/scss/_forms";
+@import "../../node_modules/bootstrap/scss/utilities/_embed";
+@import "../../node_modules/bootstrap/scss/utilities/_align";
 
 
 ::placeholder {
@@ -525,35 +527,6 @@ form {
 }
 
 .work-order {
-	.col-md-4 {
-		padding-left: 30px;
-		padding-right: 30px;
-		position: relative;
-	}
-	.call::before {
-		content: '\f2a0';
-	}
-	.processing::before {
-		content: '\f134';
-	}
-	.prevention::before {
-		content: '\f13a';
-	}
-	.section-content-header::before {
-		font-family: FontAwesome;
-		font-size: 50px;
-		margin-right: 20px;
-		margin-left: -30px;
-	}
-	.col-md-4:nth-child(2)::before, .col-md-4:nth-child(3)::before {
-		content: '\f0a9';
-		font-family: FontAwesome;
-		font-size: 35px;
-		color: $maincolor;
-		position: absolute;
-		left: -20px;
-		top: 50%;
-	}
 }
 
 .services {
@@ -643,6 +616,10 @@ form {
 .we-were-chosen {
 	text-align: center;
 	background-color: lighten( $wrapper-bg-bolor, 70% );
+}
+
+.map {
+	margin-bottom: 0;
 }
 
 .main-footer {
