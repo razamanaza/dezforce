@@ -316,18 +316,15 @@ form {
 			margin-top: 0;
 			font-size: 38px;
 			text-align: center;
-			margin-bottom: 100px;
+			margin-bottom: 80px;
 		}
 	}
 	.main-header-promo {
 		margin-bottom: 60px;
 		font-size: 22px;
-		background-color: rgba(0, 0, 0, .3);
+		background-color: rgba(0, 0, 0, .5);
 		color: #eee;
-		padding: 40px 40px 10px 40px;
-		.main-header-form {
-			margin-bottom: 30px;
-		}
+		padding: 40px;
 		h2 {
 			text-align: center;
 			color: $maincolor;
