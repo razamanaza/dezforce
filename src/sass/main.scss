@@ -310,13 +310,28 @@ form {
 			background-color: #fff;
 		}
 	}
-	.main-header-promo {
-		margin-top: 60px;
-		margin-bottom: 60px;
-		font-size: 22px;
+	.main-header-services {
+		margin-top: 80px;
 		h1 {
 			margin-top: 0;
-			font-size: 28px;
+			font-size: 38px;
+			text-align: center;
+			margin-bottom: 100px;
+		}
+	}
+	.main-header-promo {
+		margin-bottom: 60px;
+		font-size: 22px;
+		background-color: rgba(0, 0, 0, .3);
+		color: #eee;
+		padding: 40px 40px 10px 40px;
+		.main-header-form {
+			margin-bottom: 30px;
+		}
+		h2 {
+			text-align: center;
+			color: $maincolor;
+			margin: 0;
 		}
 		ul {
 			padding-left: 30px;
@@ -327,16 +342,13 @@ form {
 			color: $maincolor;
 			font-weight: bold;
 			position: absolute;
-			left: -30px;
+			left: -20px;
 		}
 		li {
 			list-style: none;
 			margin-bottom: 15px;
 			position: relative;
-		}
-		form {
-			background-color: rgba(0, 0, 0, .3);
-			color: #eee;
+			font-size: 14px;
 		}
 	}
 }
