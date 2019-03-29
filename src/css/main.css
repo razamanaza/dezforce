@@ -4927,16 +4927,18 @@ html {
 @media (max-width: 991.98px) {
   .problems .problems-icon::after {
     width: 200px;
-    height: 200px; } }
-
-@media (max-width: 767.98px) {
+    height: 200px; }
+  .header-logo {
+    text-align: center; }
   .main-header .main-header-promo {
     font-size: 18px; }
     .main-header .main-header-promo h2 {
       font-size: 24px; }
   .main-header .top-nav .main-header-phone {
     font-size: 20px;
-    float: left; }
+    float: left; } }
+
+@media (max-width: 767.98px) {
   .problems .problems-icon::after {
     display: none; }
   .work-order .col-md-4:nth-child(2)::before, .work-order .col-md-4:nth-child(3)::before {

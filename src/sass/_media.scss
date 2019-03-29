@@ -21,11 +21,9 @@
 			height: 200px;
     }
   }
-}
-
-//Small: ≥576px
-@include media-breakpoint-down(sm) {
-  
+  .header-logo {
+    text-align: center;
+  }
   .main-header {
     .main-header-promo {
       font-size: 18px;
@@ -40,6 +38,12 @@
       }
     }
   }
+}
+
+//Small: ≥576px
+@include media-breakpoint-down(sm) {
+  
+
   .problems {
     .problems-icon::after {
       display: none;
@@ -61,7 +65,6 @@
 
 //Extra small: <576px
 @include media-breakpoint-up(xs) {
-
 }
 
 //Small: ≤576px
