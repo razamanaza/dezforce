@@ -10,7 +10,8 @@ const gulp        	= require('gulp'),
 			autoprefixer  = require('gulp-autoprefixer'),
 			cache       = require('gulp-cache'),
 			notify        = require('gulp-notify'),
-			deploy      = require('gulp-gh-pages-will');
+			deploy      = require('gulp-gh-pages-will'),
+			sitemap = require('gulp-sitemap');
 
 gulp.task('browser-sync', () => {
 	browsersync({
@@ -19,6 +20,16 @@ gulp.task('browser-sync', () => {
 		},
 		notify: false,
 	})
+});
+
+gulp.task('sitemap', function () {
+    gulp.src('src/**/*.html', {
+            read: false
+        })
+        .pipe(sitemap({
+            siteUrl: 'https://dezforce.ru/'
+        }))
+        .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('sass', () => {
@@ -85,7 +96,7 @@ gulp.task('watch', ['js', 'browser-sync', 'css-libs'], () => {
 });
 
 
-gulp.task('build', ['clean', 'img', 'sass', 'js'], () => {
+gulp.task('build', ['clean', 'img', 'sass', 'js', 'sitemap'], () => {
 	const buildCss = gulp.src([
 		'src/css/libs.min.css',
 		'src/css/main.css'
