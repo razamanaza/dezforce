@@ -114,6 +114,113 @@
 			</div>
 		</header>
 
+		<section id="services" class="services">
+			<div class="container">
+				<h2>Наши услуги</h2>
+				<div class="row">
+					<div class="col-md-4">
+						<p class="industrial-desinfection">Дезинфекция производственных и торговых объектов - мясных, рыбных, колбасных цехов, супермаркетов и магазинов, складов и складских комплексов</p>
+					</div>
+					<div class="col-md-4">
+						<p class="auto-desinfection">Дезинфекция автотранспорта - контейнеров, фур, будок</p>
+					</div>
+					<div class="col-md-4">
+						<p class="deratisation">Дератизация (уничтожение грызунов) любых объектов - жилых и производственных.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<p class="desinsection">Уничтожение насекомых (тараканов, клопов, блох, муравьёв) в любых жилых и производственных помещениях.</p>
+					</div>
+					<div class="col-md-4">
+						<p class="stinger-desinsection">Уничтожение жалящих - ос, шершней, комаров.</p>
+					</div>
+					<div class="col-md-4">
+						<p class="field-desinsection">Аккарицидная обработка участков от клещей. Обработка участков от сорняков и вредителей.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="prices" class="prices">
+			<div class="container">
+				<h2>Цены</h2>
+				<div class="row">
+					<div class="col-md-6 prices-section">
+						<form action="https://jumprock.co/mail/dezforcesms" method="POST" id="prices-form" name="prices-form">
+							<p class="intro">Стоимость производимых работ зависит от: значимости объекта, санитарно-технического состояния, кратности проведения работ, местонахождения объекта, вида и назначения помещений</p>
+							<ul>
+								<li>Дезинфекционная обработка автотранспорта <strong>от 500 рублей</strong></li>
+								<li>Дезинфекция контейнера - <strong>1000 рублей</strong></li>
+								<li>Мойка контейнера <strong>от 700 рублей</strong></li>
+							</ul>
+							<p>Более точную стоимость вы можете узнать у оператора по телефону</p>
+							<input type="tel" name="phone" class="phone" placeholder="Номер телефона" pattern="[0-9]{7,11}" required>
+							<input name="subject" value="" class="subject hidden">
+							<input type="text" name="trapit" value="" class="gotcha">
+							<input type="hidden" name="after"  value="http://dezforce.ru/#thanks" />
+							<input type="submit" value="Рассчитать стоимость" class="btn">
+						</form>
+					</div>
+					<div class="col-md-6 prices-section">
+						<form action="/" id="calc-form" class="calc-form" name="calc-form">
+							<fieldset>
+								<legend class="section-content-header">Калькулятор предварительной стоимости:</legend>
+								<div class="form-group">
+									<label for="form-service">Вид обработки</label>
+									<select id="form-service" name="form-service" class="form-control visible">
+										<option value="dezinfection">Дезинфекция (уничтожение болезнетворных бактерий и патогенных микроорганизмов)</option>
+										<option value="dezinsectionHome">Дезинсекция (уничтожение насекомых) в жилых помещениях</option>
+										<option value="dezinsectionIndustrial">Дезинсекция (уничтожение насекомых) для предприятий, офисов, магазинов и других объектов</option>
+										<option value="deratization">Дератизация (уничтожение грызунов)</option>
+									</select>
+								</div>
+								<div class="form-group area-selectors">
+									<label>Площадь помещения</label>
+									<select id="form-dezinfection" name="form-dezinfection" class="form-control visible">
+										<option value="" class="hidden">&nbsp;</option>
+										<option value="0">Площадь до 50 м&sup2;</option>
+										<option value="1">Площадь 50-100 м&sup2;</option>
+										<option value="2">Площадь 100-200 м&sup2;</option>
+										<option value="3">Площадь 200-300 м&sup2;</option>
+										<option value="4">Площадь более 300 м&sup2;</option>
+									</select>
+									<select id="form-dezinsectionHome" name="form-dezinsectionHome" class="form-control">
+										<option value="" class="hidden">&nbsp;</option>
+										<option value="0">Гостинка</option>
+										<option value="1">1-комн</option>
+										<option value="2">2-комн</option>
+										<option value="3">3-комн</option>
+										<option value="4">4-комн и больше</option>
+									</select>
+									<select id="form-dezinsectionIndustrial" name="dezinsectionIndustrial" class="form-control">
+										<option value="" class="hidden">&nbsp;</option>
+										<option value="0">Площадь до 50 м&sup2;</option>
+										<option value="1">Площадь 50-100 м&sup2;</option>
+										<option value="2">Площадь 100-200 м&sup2;</option>
+										<option value="3">Площадь 200-300 м&sup2;</option>
+										<option value="4">Площадь более 300 м&sup2;</option>
+									</select>
+									<select id="form-deratization" name="deratization" class="form-control">
+										<option value="" class="hidden">&nbsp;</option>
+										<option value="0">Площадь до 100 м&sup2;</option>
+										<option value="1">Площадь 100-300 м&sup2;</option>
+										<option value="2">Площадь 300-500 м&sup2;</option>
+										<option value="3">Площадь 500-1000 м&sup2;</option>
+										<option value="4">Площадь более 1000 м&sup2;</option>
+									</select>
+								</div>
+								<div class="calc-form-answer">
+									<p></p>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+
 		<section id="method" class="method">
 			<div class="method-wrapper wrapper">
 				<div class="container">
@@ -234,112 +341,6 @@
 					</div>
 					<div class="call-to-action">
 							<a href="#" class="btn" data-toggle="modal" data-target="#modal-form" data-button="Оставить заявку" data-header="Оставить заявку на обработку">Оставить заявку</a>										
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="services" class="services">
-			<div class="container">
-				<h2>Наши услуги</h2>
-				<div class="row">
-					<div class="col-md-4">
-						<p class="industrial-desinfection">Дезинфекция производственных и торговых объектов - мясных, рыбных, колбасных цехов, супермаркетов и магазинов, складов и складских комплексов</p>
-					</div>
-					<div class="col-md-4">
-						<p class="auto-desinfection">Дезинфекция автотранспорта - контейнеров, фур, будок</p>
-					</div>
-					<div class="col-md-4">
-						<p class="deratisation">Дератизация (уничтожение грызунов) любых объектов - жилых и производственных.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<p class="desinsection">Уничтожение насекомых (тараканов, клопов, блох, муравьёв) в любых жилых и производственных помещениях.</p>
-					</div>
-					<div class="col-md-4">
-						<p class="stinger-desinsection">Уничтожение жалящих - ос, шершней, комаров.</p>
-					</div>
-					<div class="col-md-4">
-						<p class="field-desinsection">Аккарицидная обработка участков от клещей. Обработка участков от сорняков и вредителей.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="prices" class="prices">
-			<div class="container">
-				<h2>Цены</h2>
-				<div class="row">
-					<div class="col-md-6 prices-section">
-						<form action="https://jumprock.co/mail/dezforcesms" method="POST" id="prices-form" name="prices-form">
-							<p class="intro">Стоимость производимых работ зависит от: значимости объекта, санитарно-технического состояния, кратности проведения работ, местонахождения объекта, вида и назначения помещений</p>
-							<ul>
-								<li>Дезинфекционная обработка автотранспорта <strong>от 500 рублей</strong></li>
-								<li>Дезинфекция контейнера - <strong>1000 рублей</strong></li>
-								<li>Мойка контейнера <strong>от 700 рублей</strong></li>
-							</ul>
-							<p>Более точную стоимость вы можете узнать у оператора по телефону</p>
-							<input type="tel" name="phone" class="phone" placeholder="Номер телефона" pattern="[0-9]{7,11}" required>
-							<input name="subject" value="" class="subject hidden">
-							<input type="text" name="trapit" value="" class="gotcha">
-							<input type="hidden" name="after"  value="http://dezforce.ru/#thanks" />
-							<input type="submit" value="Рассчитать стоимость" class="btn">
-						</form>
-					</div>
-					<div class="col-md-6 prices-section">
-						<form action="/" id="calc-form" class="calc-form" name="calc-form">
-							<fieldset>
-								<legend class="section-content-header">Калькулятор предварительной стоимости:</legend>
-								<div class="form-group">
-									<label for="form-service">Вид обработки</label>
-									<select id="form-service" name="form-service" class="form-control visible">
-										<option value="dezinfection">Дезинфекция (уничтожение болезнетворных бактерий и патогенных микроорганизмов)</option>
-										<option value="dezinsectionHome">Дезинсекция (уничтожение насекомых) в жилых помещениях</option>
-										<option value="dezinsectionIndustrial">Дезинсекция (уничтожение насекомых) для предприятий, офисов, магазинов и других объектов</option>
-										<option value="deratization">Дератизация (уничтожение грызунов)</option>
-									</select>
-								</div>
-								<div class="form-group area-selectors">
-									<label>Площадь помещения</label>
-									<select id="form-dezinfection" name="form-dezinfection" class="form-control visible">
-										<option value="" class="hidden">&nbsp;</option>
-										<option value="0">Площадь до 50 м&sup2;</option>
-										<option value="1">Площадь 50-100 м&sup2;</option>
-										<option value="2">Площадь 100-200 м&sup2;</option>
-										<option value="3">Площадь 200-300 м&sup2;</option>
-										<option value="4">Площадь более 300 м&sup2;</option>
-									</select>
-									<select id="form-dezinsectionHome" name="form-dezinsectionHome" class="form-control">
-										<option value="" class="hidden">&nbsp;</option>
-										<option value="0">Гостинка</option>
-										<option value="1">1-комн</option>
-										<option value="2">2-комн</option>
-										<option value="3">3-комн</option>
-										<option value="4">4-комн и больше</option>
-									</select>
-									<select id="form-dezinsectionIndustrial" name="dezinsectionIndustrial" class="form-control">
-										<option value="" class="hidden">&nbsp;</option>
-										<option value="0">Площадь до 50 м&sup2;</option>
-										<option value="1">Площадь 50-100 м&sup2;</option>
-										<option value="2">Площадь 100-200 м&sup2;</option>
-										<option value="3">Площадь 200-300 м&sup2;</option>
-										<option value="4">Площадь более 300 м&sup2;</option>
-									</select>
-									<select id="form-deratization" name="deratization" class="form-control">
-										<option value="" class="hidden">&nbsp;</option>
-										<option value="0">Площадь до 100 м&sup2;</option>
-										<option value="1">Площадь 100-300 м&sup2;</option>
-										<option value="2">Площадь 300-500 м&sup2;</option>
-										<option value="3">Площадь 500-1000 м&sup2;</option>
-										<option value="4">Площадь более 1000 м&sup2;</option>
-									</select>
-								</div>
-								<div class="calc-form-answer">
-									<p></p>
-								</div>
-							</fieldset>
-						</form>
 					</div>
 				</div>
 			</div>
