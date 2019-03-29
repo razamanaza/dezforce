@@ -525,19 +525,6 @@ form {
 }
 
 .work-order {
-	color: $text-inverse;
-	background-image: url('../img/workorder-bg.jpg');
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: none;
-	background-size: cover;
-
-	.work-order-wrapper {
-		background-color: $wrapper-bg-bolor;
-		border-bottom: 1px solid rgba(255, 255, 255, 0);
-		border-top: 1px solid rgba(255, 255, 255, 0);
-	}
-
 	.col-md-4 {
 		padding-left: 30px;
 		padding-right: 30px;
@@ -651,6 +638,11 @@ form {
 
 .faq {
 	margin-top: 0;
+}
+
+.we-were-chosen {
+	text-align: center;
+	background-color: lighten( $wrapper-bg-bolor, 70% );
 }
 
 .main-footer {

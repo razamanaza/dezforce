@@ -1351,41 +1351,34 @@ form {
   -webkit-background-size: cover;
           background-size: cover; }
 
-.work-order {
-  color: #eee;
-  background-image: url("../img/workorder-bg.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: none;
-  -webkit-background-size: cover;
-          background-size: cover; }
-  .work-order .work-order-wrapper {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
-    border-top: 1px solid rgba(255, 255, 255, 0); }
-  .work-order .col-md-4 {
-    padding-left: 30px;
-    padding-right: 30px;
-    position: relative; }
-  .work-order .call::before {
-    content: '\f2a0'; }
-  .work-order .processing::before {
-    content: '\f134'; }
-  .work-order .prevention::before {
-    content: '\f13a'; }
-  .work-order .section-content-header::before {
-    font-family: FontAwesome;
-    font-size: 50px;
-    margin-right: 20px;
-    margin-left: -30px; }
-  .work-order .col-md-4:nth-child(2)::before, .work-order .col-md-4:nth-child(3)::before {
-    content: '\f0a9';
-    font-family: FontAwesome;
-    font-size: 35px;
-    color: #FF9900;
-    position: absolute;
-    left: -20px;
-    top: 50%; }
+.work-order .col-md-4 {
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative; }
+
+.work-order .call::before {
+  content: '\f2a0'; }
+
+.work-order .processing::before {
+  content: '\f134'; }
+
+.work-order .prevention::before {
+  content: '\f13a'; }
+
+.work-order .section-content-header::before {
+  font-family: FontAwesome;
+  font-size: 50px;
+  margin-right: 20px;
+  margin-left: -30px; }
+
+.work-order .col-md-4:nth-child(2)::before, .work-order .col-md-4:nth-child(3)::before {
+  content: '\f0a9';
+  font-family: FontAwesome;
+  font-size: 35px;
+  color: #FF9900;
+  position: absolute;
+  left: -20px;
+  top: 50%; }
 
 .services {
   text-align: center; }
@@ -1448,6 +1441,10 @@ form {
 
 .faq {
   margin-top: 0; }
+
+.we-were-chosen {
+  text-align: center;
+  background-color: rgba(179, 179, 179, 0.4); }
 
 .main-footer {
   color: #eee;
