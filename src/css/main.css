@@ -1403,6 +1403,9 @@ form {
   -webkit-background-size: cover;
           background-size: cover; }
 
+.work-order {
+  margin-bottom: 0; }
+
 .services {
   text-align: center; }
   .services .industrial-desinfection::before {
@@ -4951,11 +4954,19 @@ html {
     height: 200px; }
   .header-logo {
     text-align: center; }
+  .main-header .is-sticky .header-logo {
+    display: none; }
+  .main-header .main-header-form input {
+    font-size: 13px; }
+  .main-header .top-nav .header-nav a {
+    font-size: 18px;
+    margin-right: 5px; }
+    .main-header .top-nav .header-nav a i {
+      font-size: 24px; }
   .main-header .main-header-services h1 {
-    font-size: 32px; }
-  .main-header .top-nav .main-header-phone {
-    font-size: 20px;
-    float: left; } }
+    font-size: 24px; }
+  .main-header h2 {
+    font-size: 25px; } }
 
 @media (max-width: 767.98px) {
   .problems .problems-icon::after {
