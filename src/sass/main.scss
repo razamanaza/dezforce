@@ -650,7 +650,17 @@ form {
 	.close {
 		position: absolute;
     padding: 0;
-    right: 20px;
+		right: 0;
+		top: 0;
+		background: none;
+		box-shadow: none;
+		color: #666;
+		font-size: 50px;
+		cursor: pointer;
+	}
+	.close:hover {
+		cursor: pointer;
+		color: #333;
 	}
 	form {
 		padding-top: 50px;
@@ -660,6 +670,12 @@ form {
 		.section-content-header {
 			margin-top: 60px;
 		}
+	}
+}
+.personal-data-agreement {
+	font-size: 12px;
+	h2 {
+		margin-top: 40px;
 	}
 }
 

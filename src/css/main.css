@@ -1496,7 +1496,18 @@ form {
 .modal .close {
   position: absolute;
   padding: 0;
-  right: 20px; }
+  right: 0;
+  top: 0;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #666;
+  font-size: 50px;
+  cursor: pointer; }
+
+.modal .close:hover {
+  cursor: pointer;
+  color: #333; }
 
 .modal form {
   padding-top: 50px; }
@@ -1505,6 +1516,11 @@ form {
   background-color: #fff; }
   .modal .modal-body .section-content-header {
     margin-top: 60px; }
+
+.personal-data-agreement {
+  font-size: 12px; }
+  .personal-data-agreement h2 {
+    margin-top: 40px; }
 
 /*!
  * Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
