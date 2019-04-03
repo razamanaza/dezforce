@@ -1126,6 +1126,10 @@ form {
     line-height: 1.1;
     margin-top: 0; }
 
+.personal-data-agreement-link, .main-header .personal-data-agreement-link {
+  font-size: 11px;
+  color: black; }
+
 .call-to-action {
   text-align: center;
   display: block;
