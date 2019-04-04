@@ -191,6 +191,9 @@ form {
 
 .personal-data-agreement-link, .main-header .personal-data-agreement-link {
 	font-size: 11px;
+	line-height: 16px;
+	margin: 0;
+	padding: 0;
 	color: black;
 }
 
@@ -677,6 +680,16 @@ form {
 	h2 {
 		margin-top: 40px;
 	}
+}
+.personal-link {
+	position: fixed;
+	top: 50%;
+	left: -64px;
+	transform: rotate(90deg);
+	border-radius: 5px 5px 0 0;
+	background-color: $maincolor;
+	padding: 10px 15px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 8px 0px;
 }
 
 @import "media"; // Always at the end
