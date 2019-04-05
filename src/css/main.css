@@ -1525,19 +1525,29 @@ form {
   .personal-data-agreement h2 {
     margin-top: 40px; }
 
-.personal-link {
+.company-details {
   position: fixed;
-  top: 50%;
-  left: -64px;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-border-radius: 5px 5px 0 0;
-          border-radius: 5px 5px 0 0;
-  background-color: #FF9900;
-  padding: 10px 15px;
+  display: inline-block;
+  bottom: 35px;
+  left: 0;
+  background-color: #fd8103;
+  padding: 5px 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 8px 0px;
-          box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 8px 0px; }
+          box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 8px 0px;
+  text-align: center; }
+  .company-details :before {
+    content: '\f1c2';
+    display: block;
+    font-family: FontAwesome;
+    font-size: 30px;
+    color: #eee;
+    margin-bottom: -5px; }
+  .company-details a {
+    color: #eee;
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif; }
 
 /*!
  * Bootstrap Grid v4.3.1 (https://getbootstrap.com/)

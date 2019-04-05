@@ -115,6 +115,9 @@ gulp.task('build', ['clean', 'img', 'sass', 'js', 'sitemap'], () => {
 		
 	const buildTxt = gulp.src('src/*.txt')
 		.pipe(gulp.dest('dist'));
+
+	const buildFiles = gulp.src('src/*.docx')
+		.pipe(gulp.dest('dist'));
 	
 	const buildSitemap = 	gulp.src('src/sitemap.xml')
 		.pipe(gulp.dest('dist'));
