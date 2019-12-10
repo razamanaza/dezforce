@@ -1,1 +1,1 @@
-#A static site for dezforce.ru
+# A static site for dezforce.ru
