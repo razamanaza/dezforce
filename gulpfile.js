@@ -126,7 +126,5 @@ gulp.task('build', ['clean', 'img', 'sass', 'js', 'sitemap'], () => {
 gulp.task('deploy', () => {
 	return gulp.src('dist/**/*')
 		.pipe(deploy({ 
-			remoteUrl: 'https://github.com/dezforce/dezforce.github.io.git',
-			branch: 'master'
 		}));
 });
