@@ -8,6 +8,7 @@
 @import "../../node_modules/bootstrap/scss/mixins/_box-shadow";
 @import "../../node_modules/bootstrap/scss/_modal";
 @import "../../node_modules/bootstrap/scss/mixins/_hover";
+@import "../../node_modules/bootstrap/scss/mixins/_deprecate";
 @import "../../node_modules/bootstrap/scss/mixins/_forms";
 @import "../../node_modules/bootstrap/scss/mixins/_gradients";
 @import "../../node_modules/bootstrap/scss/_forms";
@@ -684,9 +685,9 @@ form {
 .company-details {
 	position: fixed;
 	display: inline-block;
-	bottom: 35px;
+	bottom: 5px;
 	left: 0;
-	background-color: rgba(253,129,3,1);
+	background-color: rgba(253,129,3,0.8);
 	padding: 5px 10px;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 8px 0px;
 	text-align: center;
@@ -697,6 +698,9 @@ form {
 		font-size: 30px;
 		color: $text-inverse;
 		margin-bottom: -5px;
+	}
+	.personal::before {
+		content: '\f007';
 	}
 	a {
 		color: $text-inverse;
