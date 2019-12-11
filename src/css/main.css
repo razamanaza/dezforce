@@ -1462,6 +1462,15 @@ form {
 .we-were-chosen {
   text-align: center;
   background-color: rgba(179, 179, 179, 0.4); }
+  .we-were-chosen .chosen-logos {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .map {
   margin-bottom: 0; }
@@ -1512,9 +1521,9 @@ form {
 .company-details {
   position: fixed;
   display: inline-block;
-  bottom: 5px;
+  bottom: 0;
   left: 0;
-  background-color: rgba(253, 129, 3, 0.8);
+  background-color: rgba(253, 129, 3, 0.9);
   padding: 5px 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 8px 0px;
           box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 8px 0px;
