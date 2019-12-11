@@ -1122,18 +1122,21 @@ form {
   display: block;
   margin-top: 40px; }
 
-.accordion-group .accordion [data-control] {
-  border-bottom-color: #FF9900;
-  padding: 5px;
-  font-weight: bold;
-  cursor: pointer; }
-  .accordion-group .accordion [data-control]::after {
-    top: 25px; }
-
-.accordion-group .accordion [data-content] p {
-  border: none;
-  line-height: 1.65;
-  margin-left: 30px; }
+.accordion-group .accordion {
+  line-height: 1.65; }
+  .accordion-group .accordion [data-control] {
+    border-bottom-color: #FF9900;
+    padding: 5px;
+    padding-right: 20px;
+    font-weight: bold;
+    cursor: pointer; }
+    .accordion-group .accordion [data-control]::after {
+      top: 25px; }
+  .accordion-group .accordion [data-content] {
+    padding-left: 25px; }
+    .accordion-group .accordion [data-content] p {
+      border: none;
+      margin-left: 30px; }
 
 .gotcha, .hidden {
   display: none; }
@@ -1189,7 +1192,7 @@ form {
     background-color: rgba(0, 0, 0, 0.8); }
   .main-header .main-header-wrapper {
     background-color: rgba(0, 0, 0, 0.4);
-    border-bottom: 1px solid; }
+    min-height: 100vh; }
   .main-header .top-nav .header-logo img {
     margin-top: 7px; }
   .main-header .top-nav .header-nav {

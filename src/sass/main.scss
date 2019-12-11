@@ -205,10 +205,11 @@ form {
 }
 .accordion-group {
 	.accordion {
-		
+		line-height: 1.65;
 		[data-control] {
 			border-bottom-color: $maincolor;
 			padding: 5px;
+			padding-right: 20px;
 			font-weight: bold;
 			cursor: pointer;
 			&::after {
@@ -216,10 +217,10 @@ form {
 			}
 		}
 		[data-content] {
+			padding-left: 25px;
 			p {
 				border: none;
-				line-height: 1.65;
-				margin-left: 30px;
+				margin-left: 30px;				
 			}
 		}
 
@@ -284,7 +285,7 @@ form {
 	}
 	.main-header-wrapper {
 		background-color: $wrapper-bg-bolor;
-		border-bottom: 1px solid;
+		min-height: 100vh;
 	}
 	.top-nav {
 		.header-logo {
