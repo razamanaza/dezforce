@@ -1540,6 +1540,8 @@ form {
     margin-bottom: -5px; }
   .company-details .personal::before {
     content: '\f007'; }
+  .company-details .business::before {
+    content: '\f0b1'; }
   .company-details a {
     color: #eee;
     display: block;

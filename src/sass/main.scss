@@ -707,6 +707,9 @@ form {
 	.personal::before {
 		content: '\f007';
 	}
+	.business::before {
+		content: '\f0b1';
+	}
 	a {
 		color: $text-inverse;
 		display: block;
