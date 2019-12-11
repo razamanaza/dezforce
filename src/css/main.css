@@ -1246,6 +1246,9 @@ form {
       position: relative;
       font-size: 14px; }
 
+.main-header-personal {
+  background-image: url("../img/header-bg-personal.jpg"); }
+
 .reasons p {
   text-align: center; }
 
@@ -1308,6 +1311,9 @@ form {
     text-transform: uppercase;
     margin-top: 30px; }
 
+.method-personal {
+  background-image: url("../img/method-bg-personal.jpg"); }
+
 .problems {
   text-align: center; }
   .problems .section-content-header::before {
@@ -1367,6 +1373,9 @@ form {
     background-color: rgba(0, 0, 0, 0.4);
     border-bottom: 1px solid rgba(255, 255, 255, 0);
     border-top: 1px solid rgba(255, 255, 255, 0); }
+
+.solutions-personal {
+  background-image: url("../img/advantages-bg-personal.jpg"); }
 
 .advantages .section-content-header::before {
   content: "";
