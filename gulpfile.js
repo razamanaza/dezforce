@@ -49,6 +49,7 @@ gulp.task('css-libs', ['sass'], function() {
 		'node_modules/jq-accordion/dist/css/jquery.accordion.css',
 		'node_modules/owl.carousel2/dist/assets/owl.carousel.min.css',
 		'node_modules/owl.carousel2/dist/assets/owl.theme.default.min.css',
+		'node_modules/lity/dist/lity.min.css',
 	])
 	.pipe(concat('libs.min.css'))
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
@@ -71,6 +72,7 @@ gulp.task('js', () => {
 		'node_modules/bootstrap/js/dist/util.js',
 		'node_modules/bootstrap/js/dist/modal.js',
 		'node_modules/owl.carousel2/dist/owl.carousel.min.js',
+		'node_modules/lity/dist/lity.min.js',
 		'src/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
