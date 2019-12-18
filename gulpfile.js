@@ -11,6 +11,7 @@ const gulp        	= require('gulp'),
 			cache       = require('gulp-cache'),
 			notify        = require('gulp-notify'),
 			deploy      = require('gulp-gh-pages-will'),
+			imageResize = require('gulp-image-resize'),
 			sitemap = require('gulp-sitemap');
 
 gulp.task('browser-sync', () => {
@@ -86,11 +87,21 @@ gulp.task('img', function() {
 		.pipe(gulp.dest('dist/img')); 
 });
 
+gulp.task('preview-generate', function() {
+	return gulp.src('src/img/work/**/*') 
+	.pipe(imageResize({
+		height : 300,
+		crop : false,
+		upscale : false
+	}))	
+	.pipe(gulp.dest('dist/img/work-preview')); 
+});
+
 gulp.task('clean', function() {
 	return del.sync('dist');
 });
 
-gulp.task('watch', ['js', 'browser-sync', 'css-libs'], () => {
+gulp.task('watch', ['js', 'browser-sync', 'css-libs', 'preview-generate'], () => {
 	gulp.watch('node_modules/font-awesome/fonts/*', ['fonts']);
 	gulp.watch('src/js/common.js', ['js']);
 	gulp.watch('src/sass/**/*.scss', ['sass']);

@@ -56,12 +56,19 @@ $(document).ready(function() {
     $('.calc-form-answer').text('');
   });
 
-  $(".owl-carousel").owlCarousel({
+  $(".reviews-carousel").owlCarousel({
     items: 1,
     loop: true,
     autoplay: true,
     autoHeight: true,
     autoplayTimeout: 13000,
+  });
+
+  $('.work-carousel').owlCarousel({
+    margin: 10,
+    loop: true,
+    autoWidth: true,
+    items: 4
   });
 
   $('#calc-form').on('change', '.area-selectors select', function() {
