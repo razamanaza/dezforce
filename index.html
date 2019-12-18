@@ -319,7 +319,7 @@
 			<div class="container">
 				<h2>Отзывы наших клиентов</h2>
 				<div class="row">
-					<div id="reviews-carousel" class="owl-carousel owl-theme">
+					<div id="reviews-carousel" class="owl-carousel owl-theme reviews-carousel">
 						<div class="owl-item">
 							<blockquote>
 								<p>Очень довольны профессиональной работой специалиста по дезинфекции. Наш цех работает в круглосуточном режиме, 
@@ -403,6 +403,15 @@
 						<div class="col-md-4">
 							<p class="section-content-header prevention">3. Профилактика</p>
 							<p>По окончанию работ наш специалист подробно расскажет Вам о методах профилактики появления вредителей.</p>
+						</div>
+					</div>
+					<div class="row work-gallery">
+						<div class="owl-carousel owl-theme work-carousel">
+							<div class="owl-item"><a href="img/work/1.jpeg" data-lity><img src="img/work-preview/1.jpeg" alt="work-order-1"></a></div>
+							<div class="owl-item"><a href="img/work/2.jpeg" data-lity><img src="img/work-preview/2.jpeg" alt="work-order-2"></a></div>
+							<div class="owl-item"><a href="img/work/3.jpeg" data-lity><img src="img/work-preview/3.jpeg" alt="work-order-3"></a></div>
+							<div class="owl-item"><a href="img/work/4.jpeg" data-lity><img src="img/work-preview/4.jpeg" alt="work-order-4"></a></div>
+							<div class="owl-item"><a href="img/work/5.jpeg" data-lity><img src="img/work-preview/5.jpeg" alt="work-order-5"></a></div>
 						</div>
 					</div>
 					<div class="call-to-action">
@@ -489,13 +498,11 @@
 					<button type="button" class="close btn" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
-					<form action="https://jumprock.co/mail/dezforcesms" method="POST" id="modal-form-inner" name="solutions-form">
+					<form action="https://sodb8f7y9b.execute-api.ap-southeast-2.amazonaws.com/dev/sendMail" method="POST" id="modal-form-inner" name="solutions-form">
 						<p class="form-header">Заказать обработку</p>
 						<p>Введите номер телефона или email. Наш специалист свяжется с вами в ближайшее время</p>
 						<input type="text" name="contact" class="contact" placeholder="Телефон или email" pattern="([0-9]{7,11}|^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$)" required>
-						<input name="subject" value="" class="subject hidden">
-						<input type="text" name="trapit" value="" class="gotcha">
-						<input type="hidden" name="after"  value="http://dezforce.ru/#thanks" />
+						<input type="text" name="client" value="dezforce" hidden>
 						<input type="submit" value="Заказать обработку" class="btn submit">
 						<a class="personal-data-agreement-link" href="#" class="btn" data-toggle="modal" data-target="#modal-personal-data-agreement">Согласие на обработку персональных данных</a>
 					</form>
