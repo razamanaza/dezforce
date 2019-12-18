@@ -732,7 +732,13 @@ form {
 }
 
 .form-name {
-	display: none;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0;
+	width: 0;
+	z-index: -1;
 }
 
 @import "media"; // Always at the end

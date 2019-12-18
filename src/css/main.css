@@ -1558,6 +1558,15 @@ form {
     text-transform: uppercase;
     font-family: "Oswald", sans-serif; }
 
+.form-name {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1; }
+
 /*!
  * Bootstrap Grid v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
