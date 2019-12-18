@@ -93,14 +93,13 @@
 									<p>При совместной обработке вместе с соседями вы получаете не только скидку, но и наилучший результат! И лучшую эффективность уничтожения очага скопления насекомых!</p>
 								</div>
 								<div class="main-header-form col-md-12 col-lg-5">
-									<form action="https://jumprock.co/mail/dezforcesms" method="POST" id="header-form" name="header-form">
+									<form action="https://sodb8f7y9b.execute-api.ap-southeast-2.amazonaws.com/dev/sendMail" method="POST" id="header-form" name="header-form">
 										<p>Введите ваш номер телефона или email и получите консультацию нашего специалиста</p>
 										<input type="text" name="contact" class="contact" placeholder="Телефон или email" pattern="([0-9]{7,11}|^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$)" required>
-										<input name="subject" value="" class="subject hidden">
-										<input type="text" name="trapit" value="" class="gotcha">
-										<input type="hidden" name="after"  value="http://dezforce.ru/#thanks" />
+										<input type="text" name="client" value="dezforce" hidden>
+										<input class="form-name" autocomplete="off" type="text" id="name" name="name" placeholder="Your name here">
 										<input type="submit" value="Получить консультацию" class="btn">
-										<a class="personal-data-agreement-link" href="#" class="btn" data-toggle="modal" data-target="#modal-personal-data-agreement">Согласие на обработку персональных данных</a>
+										<a class="personal-data-agreement-link" href="#" data-toggle="modal" data-target="#modal-personal-data-agreement">Согласие на обработку персональных данных</a>
 									</form>
 								</div>
 							</div>
@@ -132,7 +131,7 @@
 						<p class="stinger-desinsection">Уничтожение жалящих - ос, шершней, комаров.</p>
 					</div>
 					<div class="col-md-4">
-						<p class="field-desinsection">Аккарицидная обработка участков от клещей. Обработка участков от сорняков и вредителей.</p>
+						<p class="field-desinsection">Акарицидная обработка участков от клещей. Обработка участков от сорняков и вредителей.</p>
 					</div>
 				</div>
 			</div>
@@ -143,7 +142,7 @@
 				<h2>Цены</h2>
 				<div class="row">
 					<div class="col-md-6 prices-section">
-						<form action="https://jumprock.co/mail/dezforcesms" method="POST" id="prices-form" name="prices-form">
+						<form action="https://sodb8f7y9b.execute-api.ap-southeast-2.amazonaws.com/dev/sendMail" method="POST" id="prices-form" name="prices-form">
 							<p class="intro">Стоимость производимых работ зависит от: значимости объекта, санитарно-технического состояния, кратности проведения работ, местонахождения объекта, вида и назначения помещений</p>
 							<ul>
 								<li>Дезинфекционная обработка автотранспорта <strong>от 500 рублей</strong></li>
@@ -152,11 +151,10 @@
 							</ul>
 							<p>Более точную стоимость вы можете узнать у оператора</p>
 							<input type="text" name="contact" class="contact" placeholder="Телефон или email" pattern="([0-9]{7,11}|^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$)" required>
-							<input name="subject" value="" class="subject hidden">
-							<input type="text" name="trapit" value="" class="gotcha">
-							<input type="hidden" name="after"  value="http://dezforce.ru/#thanks" />
+							<input type="text" name="client" value="dezforce" hidden>
+							<input class="form-name" autocomplete="off" type="text" id="name" name="name" placeholder="Your name here">
 							<input type="submit" value="Рассчитать стоимость" class="btn">
-							<a class="personal-data-agreement-link" href="#" class="btn" data-toggle="modal" data-target="#modal-personal-data-agreement">Согласие на обработку персональных данных</a>
+							<a class="personal-data-agreement-link" href="#" data-toggle="modal" data-target="#modal-personal-data-agreement">Согласие на обработку персональных данных</a>
 						</form>
 					</div>
 					<div class="col-md-6 prices-section">
@@ -273,12 +271,12 @@
 				</div>
 				<div class="col-md-4 property-danger">
 					<p class="section-content-header">Испорченная мебель и оборудование</p>
-					<p>Халатность и некачественно выболненная работа приводит к порче мебели и оборудования клиента</p>
+					<p>Халатность и некачественно выполненная работа приводит к порче мебели и оборудования клиента</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4 inefficiency-danger">
-					<p class="section-content-header">Неэфективность</p>
+					<p class="section-content-header">Неэффективность</p>
 					<p>Незнание эффективных методов проведения работ, использование дешёвых некачественных препаратов приводит к нежелательным последствиям</p>
 				</div>
 				<div class="col-md-4 low-qualification-danger">
@@ -343,7 +341,8 @@
 			</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
 		<section id="solutions" class="solutions solutions-personal">
 			<div class="solutions-wrapper wrapper">
@@ -351,19 +350,18 @@
 					<h2>Сэкономьте время и деньги</h2>
 					<div class="row">
 						<div class="col-md-6">
-							<p>По статистике, около 75% обратившихся к нам за помощю, ранее пробовали справиться с вредителями самостоятельно, либо обращаясь к недобросовестным исполнителям.</p>
+							<p>По статистике, около 75%, обратившихся к нам за помощью, ранее пробовали справиться с вредителями самостоятельно, либо обращаясь к недобросовестным исполнителям.</p>
 							<p>Получите бесплатную консультацию специалиста прямо сейчас!</p>
 						</div>
 						<div class="col-md-6">
-							<form action="https://jumprock.co/mail/dezforcesms" method="POST" id="solutions-form" name="solutions-form">
+							<form action="https://sodb8f7y9b.execute-api.ap-southeast-2.amazonaws.com/dev/sendMail" method="POST" id="solutions-form" name="solutions-form">
 								<p class="form-header">Бесплатная консультация</p>
 								<p>Введите номер телефона или email. Наш специалист свяжется с вами в ближайшее время</p>
 								<input type="text" name="contact" class="contact" placeholder="Телефон или email" pattern="([0-9]{7,11}|^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$)" required>
-								<input name="subject" value="" class="subject hidden">
-								<input type="text" name="trapit" value="" class="gotcha">
-								<input type="hidden" name="after"  value="http://dezforce.ru/#thanks" />
+								<input type="text" name="client" value="dezforce" hidden>
+								<input class="form-name" autocomplete="off" type="text" id="name" name="name" placeholder="Your name here">
 								<input type="submit" value="Получить консультацию" class="btn">
-								<a class="personal-data-agreement-link" href="#" class="btn" data-toggle="modal" data-target="#modal-personal-data-agreement">Согласие на обработку персональных данных</a>
+								<a class="personal-data-agreement-link" href="#" data-toggle="modal" data-target="#modal-personal-data-agreement">Согласие на обработку персональных данных</a>
 							</form>
 						</div>
 					</div>
@@ -512,7 +510,7 @@
 							';'+'m'+'&'+'#'+'6'+'4'+';'+'&'+'#'+'1'+'0'+'3'+';'+'m'+'a'+'i'+'l'+'&'+'#'+'4'+'6'+';'+'&'+'#'+'9'+
 							'9'+';'+'&'+'#'+'1'+'1'+'1'+';'+'m'+'<'+'/'+'a'+'>');</script><noscript>[Turn on JavaScript to see the email address]</noscript>
 						</p>
-						<p><i class="fa fa-home"></i>г.Владивосток, ул. Заречная, 51, стр. 4</p>
+						<p><i class="fa fa-home"></i>г. Владивосток, ул. Заречная, 51, стр. 4</p>
 					</div>
 					<div class="col-md-4">
 						<p>© DEZFORCE - профессиональная дезинфекция</p>
@@ -535,15 +533,14 @@
 					<button type="button" class="close btn" data-dismiss="modal">
 						<span>&times;</span>
 					</button>
-					<form action="https://jumprock.co/mail/dezforcesms" method="POST" id="modal-form-inner" name="solutions-form">
+					<form action="https://sodb8f7y9b.execute-api.ap-southeast-2.amazonaws.com/dev/sendMail" method="POST" id="modal-form-inner" name="solutions-form">
 						<p class="form-header">Заказать обработку</p>
 						<p>Введите номер телефона или email. Наш специалист свяжется с вами в ближайшее время</p>
 						<input type="text" name="contact" class="contact" placeholder="Телефон или email" pattern="([0-9]{7,11}|^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$)" required>
-						<input name="subject" value="" class="subject hidden">
-						<input type="text" name="trapit" value="" class="gotcha">
-						<input type="hidden" name="after"  value="http://dezforce.ru/#thanks" />
+						<input type="text" name="client" value="dezforce" hidden>
+						<input class="form-name" autocomplete="off" type="text" id="name" name="name" placeholder="Your name here">
 						<input type="submit" value="Заказать обработку" class="btn submit">
-						<a class="personal-data-agreement-link" href="#" class="btn" data-toggle="modal" data-target="#modal-personal-data-agreement">Согласие на обработку персональных данных</a>
+						<a class="personal-data-agreement-link" href="#" data-toggle="modal" data-target="#modal-personal-data-agreement">Согласие на обработку персональных данных</a>
 					</form>
 				</div>
 			</div>
