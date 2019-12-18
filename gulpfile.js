@@ -12,6 +12,8 @@ const gulp        	= require('gulp'),
 			notify        = require('gulp-notify'),
 			deploy      = require('gulp-gh-pages-will'),
 			imageResize = require('gulp-image-resize'),
+			imagemin     = require('gulp-imagemin'),
+    	imgCompress  = require('imagemin-jpeg-recompress'),
 			sitemap = require('gulp-sitemap');
 
 gulp.task('browser-sync', () => {
@@ -84,6 +86,17 @@ gulp.task('js', () => {
 
 gulp.task('img', function() {
 	return gulp.src('src/img/**/*') 
+		.pipe(imagemin([
+			imgCompress({
+				loops: 4,
+				min: 70,
+				max: 80,
+				quality: 'high'
+			}),
+			imagemin.gifsicle(),
+			imagemin.optipng(),
+			imagemin.svgo()
+		]))
 		.pipe(gulp.dest('dist/img')); 
 });
 
