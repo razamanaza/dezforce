@@ -97,12 +97,11 @@
 									</ul>
 								</div>
 								<div class="main-header-form col-md-12 col-lg-5">
-									<form action="https://jumprock.co/mail/dezforcesms" method="POST" id="header-form" name="header-form">
+									<form action="https://sodb8f7y9b.execute-api.ap-southeast-2.amazonaws.com/dev/sendMail" method="POST" id="header-form" name="header-form">
 										<p>Введите ваш номер телефона или email и получите консультацию нашего специалиста</p>
 										<input type="text" name="contact" class="contact" placeholder="Телефон или email" pattern="([0-9]{7,11}|^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$)" required>
-										<input name="subject" value="" class="subject hidden">
-										<input type="text" name="trapit" value="" class="gotcha">
-										<input type="hidden" name="after"  value="http://dezforce.ru/#thanks" />
+										<input type="text" name="client" value="dezforce" hidden>
+										<input class="form-name" autocomplete="off" type="text" id="name" name="name" placeholder="Your name here">	
 										<input type="submit" value="Получить консультацию" class="btn">
 										<a class="personal-data-agreement-link" href="#" data-toggle="modal" data-target="#modal-personal-data-agreement">Согласие на обработку персональных данных</a>
 									</form>
@@ -147,7 +146,7 @@
 				<h2>Цены</h2>
 				<div class="row">
 					<div class="col-md-6 prices-section">
-						<form action="https://jumprock.co/mail/dezforcesms" method="POST" id="prices-form" name="prices-form">
+						<form action="https://sodb8f7y9b.execute-api.ap-southeast-2.amazonaws.com/dev/sendMail" method="POST" id="prices-form" name="prices-form">
 							<p class="intro">Стоимость производимых работ зависит от: значимости объекта, санитарно-технического состояния, кратности проведения работ, местонахождения объекта, вида и назначения помещений</p>
 							<ul>
 								<li>Дезинфекционная обработка автотранспорта <strong>от 500 рублей</strong></li>
@@ -156,9 +155,8 @@
 							</ul>
 							<p>Более точную стоимость вы можете узнать у оператора</p>
 							<input type="text" name="contact" class="contact" placeholder="Телефон или email" pattern="([0-9]{7,11}|^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$)" required>
-							<input name="subject" value="" class="subject hidden">
-							<input type="text" name="trapit" value="" class="gotcha">
-							<input type="hidden" name="after"  value="http://dezforce.ru/#thanks" />
+							<input type="text" name="client" value="dezforce" hidden>
+							<input class="form-name" autocomplete="off" type="text" id="name" name="name" placeholder="Your name here">
 							<input type="submit" value="Рассчитать стоимость" class="btn">
 							<a class="personal-data-agreement-link" href="#" data-toggle="modal" data-target="#modal-personal-data-agreement">Согласие на обработку персональных данных</a>
 						</form>
@@ -372,13 +370,12 @@
 							<p>Получите бесплатную консультацию специалиста прямо сейчас!</p>
 						</div>
 						<div class="col-md-6">
-							<form action="https://jumprock.co/mail/dezforcesms" method="POST" id="solutions-form" name="solutions-form">
+							<form action="https://sodb8f7y9b.execute-api.ap-southeast-2.amazonaws.com/dev/sendMail" method="POST" id="solutions-form" name="solutions-form">
 								<p class="form-header">Бесплатная консультация</p>
 								<p>Введите номер телефона или email. Наш специалист свяжется с вами в ближайшее время</p>
 								<input type="text" name="contact" class="contact" placeholder="Телефон или email" pattern="([0-9]{7,11}|^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$)" required>
-								<input name="subject" value="" class="subject hidden">
-								<input type="text" name="trapit" value="" class="gotcha">
-								<input type="hidden" name="after"  value="http://dezforce.ru/#thanks" />
+								<input type="text" name="client" value="dezforce" hidden>
+								<input class="form-name" autocomplete="off" type="text" id="name" name="name" placeholder="Your name here">
 								<input type="submit" value="Получить консультацию" class="btn">
 								<a class="personal-data-agreement-link" href="#" data-toggle="modal" data-target="#modal-personal-data-agreement">Согласие на обработку персональных данных</a>
 							</form>
@@ -504,6 +501,7 @@
 						<p>Введите номер телефона или email. Наш специалист свяжется с вами в ближайшее время</p>
 						<input type="text" name="contact" class="contact" placeholder="Телефон или email" pattern="([0-9]{7,11}|^[a-zA-Z0-9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$)" required>
 						<input type="text" name="client" value="dezforce" hidden>
+						<input class="form-name" autocomplete="off" type="text" id="name" name="name" placeholder="Your name here">
 						<input type="submit" value="Заказать обработку" class="btn submit">
 						<a class="personal-data-agreement-link" href="#" data-toggle="modal" data-target="#modal-personal-data-agreement">Согласие на обработку персональных данных</a>
 					</form>
