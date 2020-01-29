@@ -2,5 +2,5 @@
 
 # Allow crawling of all content
 User-agent: *
-Disallow: https://dezforce.ru/yandex_9739317c8df7e929.html
-Disallow: https://dezforce.ru/fonts/OswaldExtraLight/demo.html
+Disallow: /yandex_9739317c8df7e929.html
+Disallow: /fonts/OswaldExtraLight/demo.html
